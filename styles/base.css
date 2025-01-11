@@ -137,7 +137,6 @@ main {
     grid-column: 3 / 2;
     background-color: #baddf8;
     border: 1px solid black;
-    box-shadow: 2;
 }
 
 .card h3 {
@@ -186,7 +185,7 @@ main {
     flex-direction: column;
     gap: 40px;
     width: 175px;
-    align-items: left; /* Center items horizontally */
+    align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
 }
 .buttons button {
