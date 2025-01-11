@@ -15,7 +15,7 @@ body {
 /* Layout Styling */
 header {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #c7c7c7;
     border-bottom: 1px solid #ddd;
 }
 
@@ -124,6 +124,7 @@ main {
     grid-template-rows: auto;
     gap: 20px;
     padding: 20px;
+    max-width: 1200px;
 }
 
 .content {
@@ -132,8 +133,39 @@ main {
     line-height: 1.5;
 }
 
+.card {
+    grid-column: 3 / 2;
+    background-color: #baddf8;
+    border: 1px solid black;
+    box-shadow: 2;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: #475a68;
+    color: #d4d4d4;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+.card ul {
+    list-style-type:decimal-leading-zero;
+    list-style-position: inside;
+
+}
+.card li {
+
+    margin: 10px;
+}
+
+.card p {
+    margin: 10px;
+}
+
 .main-image {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -142,16 +174,19 @@ main {
 .main-image img {
     max-width: 100%; /* Ensures the image is responsive */
     height: auto; /* Maintains the image aspect ratio */
+    min-height: 650px;
     border-radius: 5px; /* Optional rounded corners */
+    background-size: cover;
 }
 
 .buttons {
     grid-column: 3 / 4;
+    grid-row: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 150px;
-    align-items: center; /* Center items horizontally */
+    gap: 40px;
+    width: 175px;
+    align-items: left; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
 }
 .buttons button {
