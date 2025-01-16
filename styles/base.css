@@ -94,7 +94,6 @@ nav ul li a:hover {
     color: #0078D4;
 }
 
-
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -108,17 +107,16 @@ p {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center items horizontally */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
     gap: 20px;
+    /* Space between sections */
     padding: 20px;
     max-width: 800px;
-    /* Adjust for readability */
     margin: 0 auto;
-    /* Center the main container */
+    justify-items: center;
+    /* Center columns when single column */
 }
 
 .content,
