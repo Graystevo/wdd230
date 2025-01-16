@@ -207,28 +207,6 @@ main {
     color: #333;
 }
 
-/* Project Links */
-.projects {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.project-link {
-    font-size: 1.5rem;
-    color: #0078D4;
-    text-decoration: none;
-    border: 2px solid #0078D4;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-.project-link:hover {
-    background-color: #0078D4;
-    color: white;
-}
-
 /* Footer Styling */
 footer {
     display: grid;
