@@ -1,14 +1,16 @@
-/* Base styles */
 body {
     font-family: 'Roboto', sans-serif;
 }
 
 /* Header, main, and footer styles */
-header, main, footer {
+header,
+main,
+footer {
     max-width: 640px;
-    margin: 1rem auto; /* Centers the elements horizontally */
+    margin: 1rem auto;
+    /* center horizontally */
     padding: 1rem;
-    background-color: #e6f2ff; 
+    background-color: #e6f2ff;
     border: 1px solid #bbb;
 }
 
@@ -22,17 +24,17 @@ main {
 /* Section styles */
 section {
     padding: 1rem;
-    background-color: white; /* White background for sections */
+    background-color: white;
 }
 
-/* Media query for screen widths of 500px or greater */
+
 @media screen and (min-width: 500px) {
     header {
-        background-color: black; /* Change header background to black */
-        color: white; /* Change header text color to white */
+        background-color: black;
+        color: white;
     }
 
     main {
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-columns: 1fr 1fr;
     }
 }
