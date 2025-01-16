@@ -76,7 +76,7 @@ header {
 }
 
 .header-nav li {
-    display: block;
+    display: grid;
     /* Ensure each link is on a new line */
     font-size: larger;
     font-weight: bold;

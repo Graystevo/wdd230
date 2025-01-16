@@ -76,7 +76,7 @@ header {
 }
 
 .header-nav li {
-    display: block;
+    display: grid;
     /* Ensure each link is on a new line */
     font-size: larger;
     font-weight: bold;
@@ -107,17 +107,16 @@ p {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    /* Stack items vertically */
-    align-items: center;
-    /* Center items horizontally */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
     gap: 20px;
+    /* Space between sections */
     padding: 20px;
     max-width: 800px;
-    /* Adjust for readability */
     margin: 0 auto;
-    /* Center the main container */
+    justify-items: center;
+    /* Center columns when single column */
 }
 
 .content,
@@ -263,13 +262,36 @@ footer .social-links img {
 }
 
 /* Larger Views ******************************/
-@media (min-width: 740px) {
+@media (min-width: 840px) {
     .header-nav ul {
-        flex-direction: row; /* Arrange links horizontally */
+        flex-direction: row;
+        /* Arrange links horizontally */
         gap: 20px;
     }
 
     .header-nav li {
-        display: inline-block; /* Display links inline */
+        display: grid;
+        /* Display links inline */
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on larger screens */
+    }
+
+    .content {
+        grid-column: 1/3;
+    }
+
+    .card {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .information-card {
+        grid-column: 2/3;
+        grid-row: 2;
+        align-self: start;
+        /* Aligns to the top of the box */
     }
 }
