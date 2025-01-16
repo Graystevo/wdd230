@@ -29,12 +29,21 @@ header {
 }
 
 /* Logo Styling */
+.logo {
+    display: flex; /* Aligns the logo image and title horizontally */
+    align-items: center;
+    gap: 10px; /* Space between the logo and title */
+}
 .logo img {
     width: 80px;
     height: auto;
-    justify-self: center; /* Center logo */
 }
-
+.logo p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0; /* Remove default margin */
+}
 /* Title Styling */
 .header-title {
     text-align: center;
