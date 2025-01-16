@@ -21,23 +21,22 @@ header {
 
 .header-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Logo, Title, Empty Space */
-    grid-template-rows: auto auto; /* Separate rows for title and nav */
+    grid-template-columns: 1fr; /* Single column */
+    grid-auto-rows: auto;
     gap: 10px;
     align-items: center;
+    justify-items: center; /* Center content horizontally */
 }
 
 /* Logo Styling */
 .logo img {
-    grid-column: 1 / 2; /* Place in the first column */
     width: 80px;
     height: auto;
-    justify-self: start;
+    justify-self: center; /* Center logo */
 }
 
+/* Title Styling */
 .header-title {
-    grid-column: 2 / 3; /* Span across the middle and right columns */
-    grid-row: 1 / 1;
     text-align: center;
 }
 
@@ -49,14 +48,13 @@ header {
 
 .header-title p {
     font-size: 1rem;
-    color: #f7f7f7;
+    color: #333;
 }
 
+/* Navigation Styling */
 .header-nav {
-    grid-column: 2 / 3; /* Span full width below the title */
-    grid-row: 2 / 3; /* Second row for nav */
     text-align: center;
-    margin-top: -20px;
+    margin-top: 0; /* Remove negative margin */
 }
 
 .header-nav ul {
@@ -64,11 +62,12 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Space between links */
 }
+
 .header-nav li {
-    display: inline;
+    display: block; /* Ensure each link is on a new line */
 }
 
 .header-nav a {
