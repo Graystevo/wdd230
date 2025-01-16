@@ -216,7 +216,7 @@ main {
 /* Footer Styling */
 footer {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Logo, Title, Empty Space */
+    grid-template-columns: 1fr; /* Logo, Title, Empty Space */
     grid-template-rows: auto auto; /* Separate rows for title and nav */
     text-align: center;
     margin-top: 20px;
@@ -225,17 +225,15 @@ footer {
 }
 
 footer p {
-    grid-column: 2 / 3;
     text-align: center;
+}
+
+footer p:nth-of-type(3) {
+    color: red;
 }
 
 footer .social-links {
-    grid-column: 3 / 4;
     text-align: center;
-}
-
-footer .social-links li {
-    grid-column: 1 / 3; /* Move the <li> to span columns 1 and 2 */
 }
 
 footer .social-links img {
