@@ -49,7 +49,7 @@ header {
 
 .header-title p {
     font-size: 1rem;
-    color: #666;
+    color: #f7f7f7;
 }
 
 .header-nav {
@@ -142,7 +142,7 @@ main {
 .card h3 {
     text-align: center;
     background-color: #475a68;
-    color: #d4d4d4;
+    color: #ebebeb;
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
@@ -159,6 +159,7 @@ main {
 
 .card p {
     margin: 10px;
+    color:#333;
 }
 
 .main-image {
