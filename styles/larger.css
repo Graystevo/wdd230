@@ -94,7 +94,6 @@ nav ul li a:hover {
     color: #0078D4;
 }
 
-
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -261,4 +260,16 @@ footer .social-links img {
     height: 20px;
     margin: 0 5px;
     cursor: pointer;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 740px) {
+    .header-nav ul {
+        flex-direction: row; /* Arrange links horizontally */
+        gap: 20px;
+    }
+
+    .header-nav li {
+        display: inline-block; /* Display links inline */
+    }
 }

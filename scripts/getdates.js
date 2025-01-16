@@ -19,6 +19,6 @@ window.onload = function() {
         // Set the second paragraph to the last modified date
         footerParagraphs[1].textContent = `Last updated: ${lastModified}`;
         // Apply a yellowish background color to the last modified paragraph
-        footerParagraphs[1].style.color = "rgb(114, 114, 0)"; // Light yellowish
+        footerParagraphs[1].style.color = "rgb(80, 80, 1)"; // Light yellowish
     }
 };
