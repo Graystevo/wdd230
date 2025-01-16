@@ -21,29 +21,37 @@ header {
 
 .header-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column */
+    grid-template-columns: 1fr;
+    /* Single column */
     grid-auto-rows: auto;
     gap: 10px;
     align-items: center;
-    justify-items: center; /* Center content horizontally */
+    justify-items: center;
+    /* Center content horizontally */
 }
 
 /* Logo Styling */
 .logo {
-    display: flex; /* Aligns the logo image and title horizontally */
+    display: flex;
+    /* Aligns the logo image and title horizontally */
     align-items: center;
-    gap: 10px; /* Space between the logo and title */
+    gap: 10px;
+    /* Space between the logo and title */
 }
+
 .logo img {
     width: 80px;
     height: auto;
 }
+
 .logo p {
     font-size: 1.8rem;
     font-weight: bold;
     color: #333;
-    margin: 0; /* Remove default margin */
+    margin: 0;
+    /* Remove default margin */
 }
+
 /* Title Styling */
 .header-title {
     text-align: center;
@@ -52,7 +60,8 @@ header {
 /* Navigation Styling */
 .header-nav {
     text-align: center;
-    margin-top: 0; /* Remove negative margin */
+    margin-top: 0;
+    /* Remove negative margin */
 }
 
 .header-nav ul {
@@ -60,15 +69,18 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-direction: column; /* Stack links vertically */
-    gap: 10px; /* Space between links */
+    flex-direction: column;
+    /* Stack links vertically */
+    gap: 10px;
+    /* Space between links */
 }
 
 .header-nav li {
-    display: block; /* Ensure each link is on a new line */
+    display: block;
+    /* Ensure each link is on a new line */
     font-size: larger;
     font-weight: bold;
-    
+
 }
 
 .header-nav a {
@@ -85,13 +97,15 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    
+
     gap: 15px;
 }
 
 nav ul li {
-    display: inline; /* Display list items in a line */
-    margin: 0 15px; /* Space between items */
+    display: inline;
+    /* Display list items in a line */
+    margin: 0 15px;
+    /* Space between items */
 }
 
 nav ul li a {
@@ -120,30 +134,44 @@ p {
 
 main {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
     gap: 20px;
     padding: 20px;
-    max-width: 800px; /* Adjust for readability */
-    margin: 0 auto; /* Center the main container */
+    max-width: 800px;
+    /* Adjust for readability */
+    margin: 0 auto;
+    /* Center the main container */
 }
-.content, .card, .information-card {
-    width: 100%; /* Full width within the centered container */
-    max-width: 600px; /* Limit content width */
+
+.content,
+.card,
+.information-card {
+    width: 100%;
+    /* Full width within the centered container */
+    max-width: 600px;
+    /* Limit content width */
 }
+
 .content {
     grid-column: 1;
     font-size: 1rem;
     line-height: 1.5;
 }
+
 .content h2 {
     text-align: center;
-    border-bottom: 1px solid #000000; /* Solid bottom border */
-    padding-bottom: 5px; /* Space between text and border */
-    
+    border-bottom: 1px solid #000000;
+    /* Solid bottom border */
+    padding-bottom: 5px;
+    /* Space between text and border */
+
 }
 
-.card, .information-card{
+.card,
+.information-card {
     background-color: #baddf8;
     border: 1px solid black;
     padding: 0px;
@@ -157,10 +185,12 @@ main {
     font-size: 24px;
     padding: 10px;
 }
+
 .card ul {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
 }
+
 .card li {
     margin: 10px;
 }
@@ -178,10 +208,12 @@ main {
     font-size: 24px;
     padding: 10px;
 }
+
 .information-card ul {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
 }
+
 .information-card li {
     margin: 10px;
 }
@@ -216,8 +248,10 @@ main {
 /* Footer Styling */
 footer {
     display: grid;
-    grid-template-columns: 1fr; /* Logo, Title, Empty Space */
-    grid-template-rows: auto auto; /* Separate rows for title and nav */
+    grid-template-columns: 1fr;
+    /* Logo, Title, Empty Space */
+    grid-template-rows: auto auto;
+    /* Separate rows for title and nav */
     text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
@@ -242,5 +276,3 @@ footer .social-links img {
     margin: 0 5px;
     cursor: pointer;
 }
-
-
