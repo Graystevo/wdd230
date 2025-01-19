@@ -10,7 +10,7 @@ body {
 .gridarea {
     display: grid;
     grid-gap: 7px;
-    max-width: 760px;
+    /* max-width: 760px; */
     grid-template-columns: 1fr;
     grid-template-areas:
         "header"
@@ -23,7 +23,7 @@ header,
 nav,
 footer {
     border: 1px solid #333;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 5px #000;
 }
 
 header {
@@ -87,13 +87,20 @@ main {
 section {
     padding: 7px;
     min-height: 20em;
+    max-width: 35em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    background-color: rgb(230, 230, 230);
 }
 
 .section1,
 .section2,
 .section3 {
     border: 1px solid #333;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 5px #000;
+    
 }
 
 main section:nth-of-type(1) {
@@ -102,8 +109,8 @@ main section:nth-of-type(1) {
 }
 
 section p,
-h3 {
-    margin-left: 10px;
+h3, a{
+    margin-left: 0px;
 }
 
 picture {
@@ -130,8 +137,9 @@ footer {
 }
 
 .bimage {
-    width: 200px;
-    height: auto;
+    width: 100%; /* Ensures the image matches the card width */
+    height: 100%; /* Ensures the image fills the card height */
+    object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
 }
 
 /* medium screens */
@@ -158,12 +166,20 @@ footer {
         grid-template-columns: 1fr 1fr;
         grid-column: 1/4;
         grid-row: 3;
+        justify-items: center;
     }
 
     main section:nth-of-type(3) {
         grid-column: 1/3;
         justify-self: center;
         text-align: left;
+        max-width: auto;
+    }
+
+    section {
+        padding: 7px;
+        min-height: 20em;
+        max-width: 340px;
     }
 
     h1 {
@@ -183,8 +199,9 @@ footer {
     }
 
     .bimage {
-        width: 200px;
-        height: auto;
+        width: 100%; /* Ensures the image matches the card width */
+        height: 100%; /* Ensures the image fills the card height */
+        object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
     }
 
     nav ul {
@@ -218,6 +235,7 @@ footer {
         grid-template-columns: 1fr 1fr 1fr;
         grid-column: 1/4;
         grid-row: 3;
+        grid-gap: 20px;
     }
 
     h1 {
@@ -236,9 +254,16 @@ footer {
         height: auto;
     }
 
+    section {
+        padding: 10px;
+        min-height: 20em;
+        max-width: 340px;
+    }
+
     .bimage {
-        width: 200px;
-        height: auto;
+        width: 100%; /* Ensures the image matches the card width */
+        height: 100%; /* Ensures the image fills the card height */
+        object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
     }
 
     nav ul {
