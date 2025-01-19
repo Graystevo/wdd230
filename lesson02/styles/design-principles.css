@@ -98,7 +98,7 @@ section {
 .section3 {
     border: 1px solid #333;
     box-shadow: 0 0 5px #000;
-    
+
 }
 
 main section:nth-of-type(1) {
@@ -107,7 +107,8 @@ main section:nth-of-type(1) {
 }
 
 section p,
-h3, a{
+h3,
+a {
     margin-left: 0px;
 }
 
@@ -135,9 +136,12 @@ footer {
 }
 
 .bimage {
-    width: 100%; /* Ensures the image matches the card width */
-    height: 100%; /* Ensures the image fills the card height */
-    object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
+    width: 100%;
+    /* Ensures the image matches the card width */
+    height: 100%;
+    /* Ensures the image fills the card height */
+    object-fit: cover;
+    /* Makes the image fill the container while maintaining its aspect ratio */
 }
 
 /* medium screens */
@@ -196,9 +200,12 @@ footer {
     }
 
     .bimage {
-        width: 100%; /* Ensures the image matches the card width */
-        height: 100%; /* Ensures the image fills the card height */
-        object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
+        width: 100%;
+        /* Ensures the image matches the card width */
+        height: 100%;
+        /* Ensures the image fills the card height */
+        object-fit: cover;
+        /* Makes the image fill the container while maintaining its aspect ratio */
     }
 
     nav ul {
@@ -258,9 +265,12 @@ footer {
     }
 
     .bimage {
-        width: 100%; /* Ensures the image matches the card width */
-        height: 100%; /* Ensures the image fills the card height */
-        object-fit: cover; /* Makes the image fill the container while maintaining its aspect ratio */
+        width: 100%;
+        /* Ensures the image matches the card width */
+        height: 100%;
+        /* Ensures the image fills the card height */
+        object-fit: cover;
+        /* Makes the image fill the container while maintaining its aspect ratio */
     }
 
     nav ul {
