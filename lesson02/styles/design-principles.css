@@ -88,7 +88,9 @@ section {
     padding: 7px;
 }
 
-.section1, .section2, .section3{
+.section1,
+.section2,
+.section3 {
     border: 1px solid #333;
     box-shadow: 0 0 10px #000;
 }
@@ -98,7 +100,8 @@ main section:nth-of-type(1) {
     grid-column: 1/2;
 }
 
-section p, h3 {
+section p,
+h3 {
     margin-left: 10px;
 }
 
