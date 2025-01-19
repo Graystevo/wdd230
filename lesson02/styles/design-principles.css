@@ -1,0 +1,275 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: "Sansita", Ubuntu, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Layout Styling */
+header {
+    padding: 15px;
+    background-color: rgb(207, 207, 207);
+    border-bottom: 1px solid #ddd;
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column */
+    grid-auto-rows: auto;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    /* Center content horizontally */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    /* Aligns the logo image and title horizontally */
+    align-items: center;
+    gap: 10px;
+    /* Space between the logo and title */
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.logo p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Title Styling */
+.header-title {
+    text-align: center;
+}
+
+/* Navigation Styling */
+.header-nav {
+    text-align: center;
+    margin-top: 0;
+    /* Remove negative margin */
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack links vertically */
+    gap: 10px;
+    /* Space between links */
+}
+
+.header-nav li {
+    display: grid;
+    /* Ensure each link is on a new line */
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0078D4;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    gap: 20px;
+    /* Space between sections */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-items: center;
+    /* Center columns when single column */
+}
+
+.content,
+.card,
+.information-card {
+    width: 100%;
+    /* Full width within the centered container */
+    max-width: 600px;
+    /* Limit content width */
+}
+
+.content {
+    grid-column: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.content h2 {
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    /* Solid bottom border */
+    padding-bottom: 5px;
+    /* Space between text and border */
+
+}
+
+.card,
+.information-card {
+    background-color: #baddf8;
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: #475a68;
+    color: #ebebeb;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.card ul {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.card li {
+    margin: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: #333;
+}
+
+.card a:hover {
+    color: #005a99;
+}
+
+.card p {
+    margin: 10px;
+    color: #333;
+}
+
+.information-card h3 {
+    text-align: center;
+    background-color: #475a68;
+    color: #ebebeb;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.information-card ul {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.information-card li {
+    margin: 10px;
+}
+
+.information-card p {
+    margin: 10px;
+    color: #333;
+}
+
+/* Footer Styling */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Logo, Title, Empty Space */
+    grid-template-rows: auto auto;
+    /* Separate rows for title and nav */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer p:nth-of-type(3) {
+    color: red;
+}
+
+footer .social-links {
+    text-align: center;
+}
+
+footer .social-links img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Larger Views ******************************/
+@media (min-width: 840px) {
+    .header-nav ul {
+        flex-direction: row;
+        /* Arrange links horizontally */
+        gap: 20px;
+    }
+
+    .header-nav li {
+        display: grid;
+        /* Display links inline */
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on larger screens */
+    }
+
+    .content {
+        grid-column: 1/3;
+    }
+
+    .card {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    .information-card {
+        grid-column: 2/3;
+        grid-row: 2;
+        align-self: start;
+        /* Aligns to the top of the box */
+    }
+}
