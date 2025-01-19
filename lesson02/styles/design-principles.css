@@ -86,6 +86,7 @@ main {
 
 section {
     padding: 7px;
+    min-height: 20em;
 }
 
 .section1,
