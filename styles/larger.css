@@ -23,6 +23,7 @@
     .card {
         grid-column: 1/2;
         grid-row: 2;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
     }
 
     .information-card {
@@ -30,5 +31,10 @@
         grid-row: 2;
         align-self: start;
         /* Aligns to the top of the box */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .map-container iframe {
+        width: 800px;  /* Adjust height for larger screens */
     }
 }

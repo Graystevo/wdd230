@@ -237,8 +237,12 @@ main {
 }
 
 .map-container {
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
+
 
 /* Footer Styling */
 footer {
