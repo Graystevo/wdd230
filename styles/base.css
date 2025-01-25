@@ -14,7 +14,7 @@ body {
 
 /* Layout Styling */
 header {
-    padding: 15px;
+    padding-top: 15px;
     background-color: rgb(207, 207, 207);
     border-bottom: 1px solid #ddd;
 }
@@ -47,7 +47,7 @@ header {
 .logo p {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #333;
+    color: #000;
     margin: 0;
     /* Remove default margin */
 }
@@ -59,30 +59,15 @@ header {
 
 /* Navigation Styling */
 .header-nav {
-    text-align: center;
     margin-top: 0;
+    width: 100%;
     /* Remove negative margin */
 }
 
 
 .header-nav ul {
-    list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    /* Stack links vertically */
-    gap: 10px;
-    /* Space between links */
-}
-
-.header-nav li {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: larger;
-    font-weight: bold;
 }
 
 #menu {
@@ -104,30 +89,36 @@ header {
 }
 
 .navigation {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #333;
+}
+
+.navigation li {
+    font-size: larger;
+    font-weight: bold;
 }
 
 .navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 10px;
+    /* Space between links */
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
+.navigation a:hover {
+    background-color: rgb(207, 207, 207);
+    color: #000;
+    font-weight: 700;
+}
+
 .open a {
-	display: block;
+    display: block;
 }
 
 
