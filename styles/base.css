@@ -159,7 +159,7 @@ main {
     padding: 10px;
 }
 
-.card ul {
+.card ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
 }
