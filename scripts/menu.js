@@ -1,19 +1,20 @@
 
 
-const menuButton = document.querySelector(".menu-button");
-const menu = document.querySelector(".header-nav ul");
+const menuButton = document.querySelector(".header-nav #menu");
+const menu = document.querySelector(".header-nav .navigation");
 
 // Toggle menu on button click
 menuButton.addEventListener("click", () => {
-    menu.classList.toggle("hide");
+    menu.classList.toggle("open");
+    menuButton.classList.toggle("open")
 });
 
 function handleResize() {
-  const menu = document.querySelector(".header-nav ul");
-  if (window.innerWidth > 500) {
-    menu.classList.remove("hide");
-//   } else {
-//     menu.classList.add("hide");
+  const menu = document.querySelector(".navigation");
+  if (window.innerWidth > 840) {
+    menu.classList.add("open");
+  } else {
+    menu.classList.remove("open");
   }
 }
 

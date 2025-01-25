@@ -85,17 +85,6 @@ header {
     font-weight: bold;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #0078D4;
-}
-
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -113,6 +102,34 @@ nav ul li a:hover {
 #menu.open::before {
     content: "✖";
 }
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
 
 /* everything else lole */
 
