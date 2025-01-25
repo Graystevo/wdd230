@@ -49,11 +49,11 @@ Fonts are separated by a | */
   --headline-color-on-white: #0f4c81;  /* headlines on a white background */ 
   --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
   --paragraph-color-on-white: #212529; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #fff; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #293241  ;
-  --nav-link-color: #E0FBFC;
+  --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #0f4c81  ;
+  --nav-link-color: #FFFFFF;
   --nav-background-color: #EE6C4D;
-  --nav-hover-link-color: #293241;
+  --nav-hover-link-color: #212529;
   --nav-hover-background-color: #98C1D9;
 }
 
