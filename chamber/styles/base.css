@@ -45,7 +45,7 @@ header {
     background-color: var(--paragraph-background-color);
     font-family: var(--heading-font);
 }
-header p {
+header h1 {
     color: var(--headline-color-on-color);
     font-family: var(--heading-font);
 }
@@ -67,6 +67,7 @@ header p {
     /* Aligns the logo image and title horizontally */
     align-items: center;
     gap: 10px;
+    text-align: center;
     /* Space between the logo and title */
 }
 
@@ -75,12 +76,6 @@ header p {
     height: auto;
 }
 
-.logo p {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0;
-    /* Remove default margin */
-}
 
 /* Title Styling */
 .header-title {
@@ -155,7 +150,7 @@ nav a:link, nav a:visited {
 /* everything else lole */
 
 h1 {
-
+    margin: 0;
 }
 
 p {
