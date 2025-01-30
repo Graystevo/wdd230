@@ -1,0 +1,294 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #d55227   ;
+    --secondary-color: #0f4c81 ;
+    --accent1-color: #000000;
+    --accent2-color: #ffffff;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Avenir";
+    --paragraph-font: "Optima";
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #0f4c81;  /* headlines on a white background */ 
+    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #212529; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #0f4c81  ;
+    --nav-link-color: #FFFFFF;
+    --nav-background-color: #EE6C4D;
+    --nav-hover-link-color: #212529;
+    --nav-hover-background-color: #98C1D9;
+  }
+
+/* Body Styling */
+body {
+    background-color: #ffffff;
+    font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+/* Layout Styling */
+header {
+    padding-top: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: var(--paragraph-background-color);
+    font-family: var(--heading-font);
+}
+header p {
+    color: var(--headline-color-on-color);
+    font-family: var(--heading-font);
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column */
+    grid-auto-rows: auto;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    /* Center content horizontally */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    /* Aligns the logo image and title horizontally */
+    align-items: center;
+    gap: 10px;
+    /* Space between the logo and title */
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.logo p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Title Styling */
+.header-title {
+    text-align: center;
+}
+
+/* Navigation Styling */
+.header-nav {
+    margin-top: 0;
+    width: 100%;
+    /* Remove negative margin */
+}
+
+
+.header-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: var(--nav-background-color);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    gap: 10px;
+    /* Space between links */
+    font-weight: bold;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+.navigation a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.open a {
+    display: block;
+}
+
+
+/* everything else lole */
+
+h1 {
+
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    gap: 20px;
+    /* Space between sections */
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-items: center;
+    /* Center columns when single column */
+}
+
+.content,
+.card,
+.information-card {
+    width: 100%;
+    /* Full width within the centered container */
+    max-width: 600px;
+    /* Limit content width */
+}
+
+.content {
+    grid-column: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.content h2 {
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    /* Solid bottom border */
+    padding-bottom: 5px;
+    /* Space between text and border */
+
+}
+
+.card,
+.information-card {
+    background-color: var(--paragraph-background-color);
+    border: 1px solid black;
+    padding: 0px;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: #475a68;
+    color: #ebebeb;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.card ol {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+    color: var(--paragraph-color-on-color)
+}
+
+.card li {
+    margin: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    color: var(--nav-link-color);
+}
+
+.card a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+.card p {
+    margin: 10px;
+    color: var(--paragraph-color-on-color)
+}
+
+.information-card h3 {
+    text-align: center;
+    background-color: #475a68;
+    color: #ebebeb;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.information-card ul {
+    list-style-type: decimal-leading-zero;
+    list-style-position: inside;
+}
+
+.information-card li {
+    margin: 10px;
+}
+
+.information-card p {
+    margin: 10px;
+    color: var(--paragraph-color-on-color)
+}
+
+
+/* Footer Styling */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Logo, Title, Empty Space */
+    grid-template-rows: auto auto;
+    /* Separate rows for title and nav */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p:nth-of-type(3) {
+
+}
+
+footer .social-links {
+
+}
+
+footer .social-links img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
