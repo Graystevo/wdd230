@@ -164,7 +164,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     /* Single column by default */
-    gap: 20px;
+    gap: 10px;
     /* Space between sections */
     padding: 20px;
     max-width: 800px;
@@ -173,7 +173,7 @@ main {
     /* Center columns when single column */
 }
 
-.content,.current-events,.card,.information-card {
+.content,.current-events,.spotlight-card,.information-card {
     width: 100%;
 }
 
@@ -192,10 +192,18 @@ main {
 
 }
 
+/* General to all cards */
+.spotlight-card,.information-card,.current-events {
+    background-color: var(--paragraph-background-color);
+    border: 1px solid black;
+    padding: 0px;
+}
+
+/* Current Events section */
 .current-events h3 {
     text-align: center;
     background-color: #475a68;
-    color: #ebebeb;
+    color: var(--paragraph-color-on-color);
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
@@ -222,56 +230,67 @@ main {
     color: var(--nav-hover-link-color);
 }
 
-.current-events p {
+.current-events h4 {
     margin: 10px;
     color: var(--paragraph-color-on-color)
 }
 
-.card,.information-card,.current-events {
-    background-color: var(--paragraph-background-color);
-    border: 1px solid black;
-    padding: 0px;
+.current-events p {
+    color: var(--paragraph-color-on-color)
 }
 
-.card h3 {
+/* spotlight card section */
+.spotlight-card > :not(:first-child) {
+    display: flex;
+}
+
+.spotlight-card h3 {
     text-align: center;
     background-color: #475a68;
-    color: #ebebeb;
+    color: var(--paragraph-color-on-color);
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
 }
 
-.card ol {
+.spotlight-card h4 {
+    margin: 10px;
+    color: var(--paragraph-color-on-color)
+}
+
+.spotlight-card ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
     color: var(--paragraph-color-on-color)
 }
 
-.card li {
+.spotlight-card li {
     margin: 10px;
 }
 
-.card a {
+.spotlight-card a {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
     color: var(--nav-link-color);
 }
 
-.card a:hover {
+.spotlight-card a:hover {
     color: var(--nav-hover-link-color);
 }
 
-.card p {
+.spotlight-card p {
     margin: 10px;
     color: var(--paragraph-color-on-color)
 }
 
-.information-card h3 {
+/* Weather  section */
+.information-card {
     text-align: center;
+}
+.information-card h3 {
     background-color: #475a68;
-    color: #ebebeb;
+    color: var(--paragraph-color-on-color);
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
