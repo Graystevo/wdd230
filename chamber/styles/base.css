@@ -167,7 +167,7 @@ main {
     gap: 10px;
     /* Space between sections */
     padding: 20px;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     justify-items: center;
     /* Center columns when single column */
@@ -181,6 +181,10 @@ main {
     grid-column: 1;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+#hero-img {
+    width: 100%;
 }
 
 .content h2 {
@@ -240,11 +244,16 @@ main {
 }
 
 /* spotlight card section */
+.spotlight-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 .spotlight-card > :not(:first-child) {
-    display: flex;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 }
 
 .spotlight-card h3 {
+    grid-column: 1/4;
     text-align: center;
     background-color: #475a68;
     color: var(--paragraph-color-on-color);
