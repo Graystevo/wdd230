@@ -33,15 +33,11 @@ body {
     font-family: var(--paragraph-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--headline-color-on-white);
-}
+
 
 /* Layout Styling */
 header {
     padding-top: 15px;
-    border-bottom: 1px solid #ddd;
     background-color: var(--paragraph-background-color);
     font-family: var(--heading-font);
 }
@@ -102,6 +98,7 @@ header h1 {
     border: 0;
     background: none;
     color: var(--nav-hover-background-color);
+    cursor: pointer;
     position: absolute;
     top: 2.75rem;
     right: 1.2rem;
@@ -113,6 +110,15 @@ header h1 {
 
 #menu.open::before {
     content: "✖";
+}
+
+#mode {
+	position: absolute;
+	top: .98rem;
+	right: 1.2rem;
+	cursor: pointer;
+    color: #FFFFFF;
+	font-size: 1.2rem;
 }
 
 .navigation {
@@ -153,11 +159,6 @@ nav a:link, nav a:visited {
 
 h1 {
     margin: 0;
-}
-
-p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
 }
 
 main {
