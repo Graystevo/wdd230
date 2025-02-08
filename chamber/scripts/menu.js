@@ -21,7 +21,7 @@ window.addEventListener("resize", handleResize);
 
 // the stuff for dark mode
 const modeButton = document.querySelector("#mode");
-const main = document.querySelector("body");
+const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
 	if (modeButton.textContent.includes("🌑")) {
