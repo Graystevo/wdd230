@@ -34,6 +34,7 @@ button.addEventListener('click', () => {
         
         // Clear the input value after adding the chapter
         input.value = '';
+        
     } else {
         // If the input is blank, remind the user to enter a book and chapter
         alert('Please enter a book and chapter!');
