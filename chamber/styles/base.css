@@ -319,6 +319,14 @@ main {
     color: var(--paragraph-color-on-color)
 }
 
+.information-card img {
+    max-width: 10%;
+    float: left;
+    /* move sun and text to right of sun icon using these */
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
 
 /* Footer Styling */
 footer {
