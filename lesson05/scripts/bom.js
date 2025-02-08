@@ -3,12 +3,40 @@ const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
 button.addEventListener('click', () => {
-    // Add your code here for what happens when the button is clicked
-    const chapter = input.value; // Get the value from the input
-    if (chapter) {
-        const listItem = document.createElement('li'); // Create a new list item
-        listItem.textContent = chapter; // Set the text of the list item
-        list.appendChild(listItem); // Append the new item to the list
-        input.value = ''; // Clear the input field after adding the chapter
+    // Check if the input is not blank
+    if (input.value != '') {
+        // Create a new <li> element
+        const li = document.createElement('li');
+        
+        // Create a delete button
+        const deleteButton = document.createElement('button');
+        
+        // Populate the <li> element's textContent with the input value
+        li.textContent = input.value;
+        
+        // Populate the button's textContent with '❌'
+        deleteButton.textContent = '❌';
+        
+        // Append the delete button to the <li> element
+        li.append(deleteButton);
+        
+        // Append the <li> element to the unordered list
+        list.append(li);
+        
+        // Add an event listener to the delete button to remove the <li> when clicked
+        deleteButton.addEventListener('click', function () {
+            list.removeChild(li);
+            input.focus(); // Focus back to the input field
+        });
+        
+        // Send focus to the input element
+        input.focus();
+        
+        // Clear the input value after adding the chapter
+        input.value = '';
+    } else {
+        // If the input is blank, remind the user to enter a book and chapter
+        alert('Please enter a book and chapter!');
+        input.focus(); // Return focus to the input field
     }
 });
