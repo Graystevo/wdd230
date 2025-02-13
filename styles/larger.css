@@ -1,5 +1,5 @@
 /* Larger Views ******************************/
-@media (min-width: 840px) {
+@media (min-width: 860px) {
     .header-nav ul {
         flex-direction: row;
         /* Arrange links horizontally */
@@ -35,6 +35,8 @@
     }
 
     .map-container iframe {
-        width: 800px;  /* Adjust height for larger screens */
+        max-width: 860px;  /* Adjust height for larger screens */
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
