@@ -1,5 +1,5 @@
 /* Larger Views ******************************/
-@media (min-width: 860px) {
+@media (min-width: 662px) {
     .header-nav ul {
         flex-direction: row;
         /* Arrange links horizontally */

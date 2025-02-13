@@ -9,7 +9,7 @@ menuButton.addEventListener("click", () => {
 
 function handleResize() {
   const menu = document.querySelector(".navigation");
-  if (window.innerWidth >= 860) {
+  if (window.innerWidth >= 662) {
     menu.classList.add("open");
   } else {
     menu.classList.remove("open");
