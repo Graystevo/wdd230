@@ -149,14 +149,12 @@ p {
 
 .herolabel {
 	position: absolute;
-	top: 30px;
-	left: 30px;
+	top: 10px;
+	left: 10px;
 	background: radial-gradient(#fff, #4D5B97);
 	border: 1px solid rgba(0,0,0,.75);
-	padding: 1.5rem;
+	padding: .5rem;
 	box-shadow: 0 0 3rem #fff;
-	opacity: 0.75;
-	/* Buenas */
 }
 
 .herolabel p {
@@ -173,7 +171,8 @@ main {
     /* Single column by default */
     gap: 20px;
     /* Space between sections */
-    padding: 20px;
+    padding: 5px;
+    padding-top: 0px;
     max-width: 860px;
     margin: 0 auto;
     justify-items: center;
@@ -192,7 +191,6 @@ main {
 .content {
     grid-column: 1;
     font-size: 1rem;
-    line-height: 1.5;
 }
 
 .content h2 {
