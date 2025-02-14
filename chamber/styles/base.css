@@ -232,7 +232,8 @@ main {
 .current-events ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
-    color: var(--paragraph-color-on-color)
+    color: var(--paragraph-color-on-color);
+
 }
 
 .current-events li {
@@ -252,11 +253,13 @@ main {
 
 .current-events h4 {
     margin: 10px;
-    color: var(--paragraph-color-on-color)
+    color: var(--paragraph-color-on-color);
+
 }
 
 .current-events p {
-    color: var(--paragraph-color-on-color)
+    color: var(--paragraph-color-on-color);
+    margin: 10px;
 }
 
 /* spotlight card section */
