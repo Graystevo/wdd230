@@ -35,7 +35,7 @@
     }
 
     .map-container iframe {
-        max-width: 860px;  /* Adjust height for larger screens */
+        max-width: 960px;  /* Adjust height for larger screens */
         padding-left: 20px;
         padding-right: 20px;
     }
