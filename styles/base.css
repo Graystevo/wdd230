@@ -15,7 +15,6 @@ body {
 header {
     padding-top: 15px;
     background-color: rgb(207, 207, 207);
-    border-bottom: 1px solid #ddd;
 }
 
 .header-grid {
@@ -138,7 +137,6 @@ p {
 	margin: 10px auto;
     margin-top: 0px;
 	position: relative;
-	border: 1px solid rgba(0,0,0,.1);
 	height: 300px;
 }
 
