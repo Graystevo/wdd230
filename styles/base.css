@@ -192,7 +192,7 @@ main {
     font-size: 1rem;
 }
 
-.content h2 {
+.content h1 {
     text-align: center;
     border-bottom: 1px solid #000000;
     /* Solid bottom border */
@@ -208,7 +208,7 @@ main {
     padding: 0px;
 }
 
-.card h3 {
+.card h2 {
     text-align: center;
     background-color: #475a68;
     color: #ebebeb;
@@ -242,7 +242,7 @@ main {
     color: #333;
 }
 
-.information-card h3 {
+.information-card h2 {
     text-align: center;
     background-color: #475a68;
     color: #ebebeb;
@@ -272,7 +272,9 @@ main {
     margin: 10px 0;
 }
 .map-container iframe {
-    max-width: 95%;
+    max-width: 100%;
+    padding: 5px;
+    padding-top: 0px;
 }
 
 /* Footer Styling */
