@@ -6,26 +6,30 @@
 
 :root {
     /* change the values below to your colors from your palette */
-    --primary-color: #d55227   ;
-    --secondary-color: #0f4c81 ;
+    --primary-color: #d55227;
+    --secondary-color: #0f4c81;
     --accent1-color: #000000;
     --accent2-color: #ffffff;
-  
+
     /* change the values below to your chosen font(s) */
     --heading-font: "Avenir";
     --paragraph-font: "Optima";
-  
+
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #0f4c81;  /* headlines on a white background */ 
-    --headline-color-on-color: #FFFFFF; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #212529; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #FFFFFF; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #0f4c81  ;
+    --headline-color-on-white: #0f4c81;
+    /* headlines on a white background */
+    --headline-color-on-color: #FFFFFF;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #212529;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #FFFFFF;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #0f4c81;
     --nav-link-color: #FFFFFF;
     --nav-background-color: #EE6C4D;
     --nav-hover-link-color: #212529;
     --nav-hover-background-color: #98C1D9;
-  }
+}
 
 /* Body Styling */
 body {
@@ -41,6 +45,7 @@ header {
     background-color: var(--paragraph-background-color);
     font-family: var(--heading-font);
 }
+
 header h1 {
     color: var(--headline-color-on-color);
     font-family: var(--heading-font);
@@ -113,12 +118,12 @@ header h1 {
 }
 
 #mode {
-	position: absolute;
-	top: .98rem;
-	right: 1.2rem;
-	cursor: pointer;
+    position: absolute;
+    top: .98rem;
+    right: 1.2rem;
+    cursor: pointer;
     color: #FFFFFF;
-	font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .navigation {
@@ -141,13 +146,14 @@ header h1 {
     font-weight: bold;
 }
 
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+nav a:link,
+nav a:visited {
+    color: var(--nav-link-color);
 }
 
 .navigation a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
 .open a {
@@ -174,7 +180,10 @@ main {
     /* Center columns when single column */
 }
 
-.content,.current-events,.spotlight-card,.information-card {
+.content,
+.current-events,
+.spotlight-card,
+.information-card {
     width: 100%;
 }
 
@@ -183,36 +192,37 @@ main {
 }
 
 .hero {
-	margin: 10px auto;
+    margin: 10px auto;
     margin-top: 0px;
-	position: relative;
-	height: 300px;
+    position: relative;
+    height: 300px;
 }
 
 .hero img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .herolabel {
-	position: absolute;
-	bottom: 10px;
-	left: 10px;
-	background-color: rgb(238, 232, 222);
-	padding: .5rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgb(238, 232, 222);
+    padding: .5rem;
 }
 
 .herolabel h2 {
-	margin: 0;
-	font-weight: 700;
-	font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
     font-family: var(--heading-font);
     cursor: pointer;
 }
 
 /* General to all cards */
-.information-card,.current-events {
+.information-card,
+.current-events {
     background-color: var(--paragraph-background-color);
     border: 1px solid black;
     padding: 0px;
@@ -265,11 +275,11 @@ main {
 .spotlight-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:10px;
+    gap: 10px;
     background-color: white;
 }
 
-.spotlight-card > * {
+.spotlight-card>* {
     background-color: var(--paragraph-background-color);
     border: 1px solid black;
 }
@@ -319,6 +329,7 @@ main {
 .information-card {
     text-align: center;
 }
+
 .information-card h3 {
     background-color: #475a68;
     color: var(--paragraph-color-on-color);
@@ -362,13 +373,9 @@ footer {
     font-size: 0.9rem;
 }
 
-footer p:nth-of-type(3) {
+footer p:nth-of-type(3) {}
 
-}
-
-footer .social-links {
-
-}
+footer .social-links {}
 
 footer .social-links img {
     width: 25px;
