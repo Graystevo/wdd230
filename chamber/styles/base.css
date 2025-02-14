@@ -168,6 +168,7 @@ main {
     gap: 10px;
     /* Space between sections */
     padding: 20px;
+    padding-top: 0;
     max-width: 1000px;
     margin: 0 auto;
     justify-items: center;
@@ -180,25 +181,39 @@ main {
 
 .content {
     grid-column: 1;
-    font-size: 1rem;
-    line-height: 1.5;
 }
 
-#hero-img {
-    width: 100%;
+.hero {
+	margin: 10px auto;
+    margin-top: 0px;
+	position: relative;
+	height: 300px;
 }
 
-.content h2 {
-    text-align: center;
-    border-bottom: 1px solid #000000;
-    /* Solid bottom border */
-    padding-bottom: 5px;
-    /* Space between text and border */
+.hero img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
+.herolabel {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	background-color: rgb(238, 232, 222);
+	padding: .5rem;
+}
+
+.herolabel h2 {
+	margin: 0;
+	font-weight: 700;
+	font-size: 1.5rem;
+    font-family: var(--heading-font);
+    cursor: pointer;
 }
 
 /* General to all cards */
-.spotlight-card,.information-card,.current-events {
+.information-card,.current-events {
     background-color: var(--paragraph-background-color);
     border: 1px solid black;
     padding: 0px;
@@ -248,9 +263,13 @@ main {
 .spotlight-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    background-color: white;
 }
-.spotlight-card > :not(:first-child) {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+
+.spotlight-card > * {
+    background-color: var(--paragraph-background-color);
+    border: 1px solid black;
 }
 
 .spotlight-card h3 {

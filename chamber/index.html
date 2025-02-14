@@ -20,17 +20,17 @@
 </head>
 
 <body>
-    
+
     <header>
         <div class="header-grid">
             <div class="logo">
-                <img src="./images/favicon.ico" alt="chamber Logo">
+                <img src="./images/favicon.webp" alt="chamber Logo">
                 <h1>St. George Chamber of Commerce</h1>
             </div>
 
             <nav class="header-nav">
                 <div id="mode">
-                   <p>Mode: 🌑</p> 
+                    <p>Mode: 🌑</p>
                 </div>
                 <button id="menu" class="" aria-label="menu button"> </button>
                 <ul class="navigation">
@@ -46,8 +46,16 @@
     <main>
 
         <section class="content">
-            <h2>Join the Chamber!</h2>
-            <img id="hero-img" src="./images/hero.webp" alt="people enjoying rafting">
+            <div class="hero">
+                <picture>
+                    <source srcset="./images/wdd230-small.webp" media="(max-width:500px)">
+                    <source srcset="./images/wdd230-medium.webp" media="(max-width:1000px)">
+                    <img src="./images/wdd230-large.webp" alt="Hero Image of people smiling in an office">
+                </picture>
+                <div class="herolabel">
+                    <h2>Join the Chamber!</h2>
+                </div>
+            </div>
         </section>
 
         <section class="current-events">
@@ -63,21 +71,21 @@
         <section class="spotlight-card">
 
 
-            <div class="spotlight-card1">
+            <div id="spotlight-card1">
                 <h4>
                     Company 1
                 </h4>
                 <p>company 1 desc</p>
             </div>
 
-            <div class="spotlight-card2">
+            <div id="spotlight-card2">
                 <h4>
                     Company 2
                 </h4>
                 <p>company 2 desc</p>
             </div>
 
-            <div class="spotlight-card3">
+            <div id="spotlight-card3">
                 <h4>
                     Company 3
                 </h4>
