@@ -36,6 +36,7 @@
 
     .map-container iframe {
         max-width: 960px;  /* Adjust height for larger screens */
+        padding: 0;
         padding-left: 20px;
         padding-right: 20px;
     }

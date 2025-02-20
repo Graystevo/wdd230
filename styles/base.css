@@ -271,6 +271,8 @@ main {
 }
 .map-container iframe {
     max-width: 100%;
+    width:100%;
+    border: none;
     padding: 5px;
     padding-top: 0px;
 }
