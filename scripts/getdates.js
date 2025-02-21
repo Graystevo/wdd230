@@ -22,3 +22,18 @@ window.onload = function() {
         footerParagraphs[1].style.color = "rgb(80, 80, 1)"; // Light yellowish
     }
 };
+
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = `You've visited this page ${numVisits} times.`;
+} else {
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+// Increment the number of visits by one.
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
