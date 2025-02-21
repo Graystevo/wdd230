@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayden - WDD 230 - w07 Lazy Load</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. course assignment portal">
+    <meta name="author" content="Graystevo">
+    <meta property="og:title" content="Grayden - WDD 230 - Lazy Load">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.mountainbikebill.com/images/Trails/UT-ChurchRocks/UT-ChurchRocks-Splash.jpg">
+    <meta property="og:url" content="https://graystevo.github.io/wdd230">
+    <script defer src="scripts/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Grayden Stevens</h1>
+    </header>
+
+    <main>
+        <h2>Lazy Loading of Images</h2>
+        <img src="./images/placeholder.webp" data-src="https://picsum.photos/400/600?random=1" alt="Lazy Image 1" class="lazy">
+        <img src="./images/placeholder.webp" data-src="https://picsum.photos/400/600?random=2" alt="Lazy Image 2" class="lazy">
+        <img src="./images/placeholder.webp" data-src="https://picsum.photos/400/600?random=3" alt="Lazy Image 3" class="lazy">
+        <img src="./images/placeholder.webp" data-src="https://picsum.photos/400/600?random=4" alt="Lazy Image 4" class="lazy">
+        <img src="./images/placeholder.webp" data-src="https://picsum.photos/400/600?random=5" alt="Lazy Image 5" class="lazy">
+        <img src="./images/placeholder.webp" data-src="https://picsum.photos/400/600?random=6" alt="Lazy Image 6" class="lazy">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Lazy Load Demo</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
