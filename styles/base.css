@@ -134,32 +134,32 @@ p {
 }
 
 .hero {
-	margin: 10px auto;
+    margin: 10px auto;
     margin-top: 0px;
-	position: relative;
-	height: 300px;
+    position: relative;
+    height: 300px;
 }
 
 .hero img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .herolabel {
-	position: absolute;
-	top: 10px;
-	left: 10px;
-	background-color: rgb(238, 232, 222);
-	padding: .5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(238, 232, 222);
+    padding: .5rem;
 }
 
 .herolabel p {
-	margin: 0;
-	padding: .25rem;
-	font-weight: 700;
-	font-size: 1.5rem;
-	font-family:"Great Vibes", serif;
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
 }
 
 main {
@@ -203,8 +203,8 @@ main {
 .information-card {
     background-color: #baddf8;
     border: 1px solid black;
-    padding: 0px;
 }
+
 
 .card h3 {
     text-align: center;
@@ -269,11 +269,11 @@ main {
     justify-content: center;
     margin: 10px 0;
 }
+
 .map-container iframe {
     max-width: 100%;
-    width:100%;
+    width: 100%;
     height: 450px;
-    style: border 0;
     border: none;
     padding: 5px;
     padding-top: 0px;
