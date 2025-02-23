@@ -172,7 +172,6 @@ main {
     /* Single column by default */
     gap: 10px;
     /* Space between sections */
-    padding: 20px;
     padding-top: 0;
     max-width: 1000px;
     margin: 0 auto;
@@ -373,13 +372,113 @@ footer {
     font-size: 0.9rem;
 }
 
-footer p:nth-of-type(3) {}
-
-footer .social-links {}
-
 footer .social-links img {
     width: 25px;
     height: 25px;
     margin: 0 5px;
     cursor: pointer;
+}
+
+.images-of-stgeorge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.images-of-stgeorge img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+#calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+
+.calendar {
+    padding: 20px;
+    background-color: #0f4c81;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+}
+
+.calendar-days div {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar button {
+    color: #FFFFFF;
+    background-color: #d55227;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+.calendar-days div:hover {
+    background-color: #837d7d;
+}
+
+.calendar-days div.active {
+    background-color: yellow;
+    color: red;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 5px;
+    border: solid 1px black;
+}
+
+#days div {
+    text-align: center;
+    padding: 10px;
+    border: solid 1px black;
+}
+
+#days div:hover {
+    background-color: rgb(250, 250, 250);
+}
+
+.visits {
+    border: solid black 2px;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #0f4c81;
+    font-size: 2rem;
+
+}
+
+.left-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    /* border: solid 1px black; */
+}
+
+.left-bar > *{
+    box-sizing: border-box; /* Ensures padding/border are included in width/height */
+    border: 2px solid black; /* Adds a visible border */
+    padding: 10px; /* Optional: adds space inside the border */
 }

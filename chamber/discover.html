@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayden - WDD 230 - Chamber of Commerce</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Assignment">
+    <meta name="author" content="Graystevo">
+    <meta property="og:title" content="Grayden - WDD 230 - Chamber Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://stgeorgechamber.com/wp-content/uploads/2020/09/smiling-worker.jpg">
+    <meta property="og:url" content="https://graystevo.github.io/wdd230">
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/calendar.js" defer></script>
+    <script src="./scripts/visits.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-grid">
+            <div class="logo">
+                <img src="./images/favicon.webp" alt="chamber Logo">
+                <h1>St. George Chamber of Commerce</h1>
+            </div>
+
+            <nav class="header-nav">
+                <div id="mode">
+                    <p>Mode: 🌑</p>
+                </div>
+                <button id="menu" class="" aria-label="menu button"> </button>
+                <ul class="navigation">
+                    <li><a href="./index.html" title="Home">Home</a></li>
+                    <li><a href="./discover.html" title="Discover" class="active">Discover</a></li>
+                    <li><a href="#./directory.html/">Directory</a></li>
+                    <li><a href="#./join.html/">Join Us!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="left-bar">
+            <section class="visits">
+                <div id="visits"></div>
+            </section>
+            <section class="population">
+                <h2>Population of St George</h2>
+                <p>The population of St George Utah as of 2023 is 467.
+                    It has an elevation of 4,311 feet.</p>
+            </section>
+            <section class="main-attraction">
+                <h2>Main Attractions</h2>
+                <p>St. George is a wonderful central point for several national parks. We have plenty of hiking, biking, and water sports available too!</p>
+            </section>
+            <section id="calendar">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prevMonth">Prev</button>
+                        <h2 id="monthYear"></h2>
+                        <button id="nextMonth">Next</button>
+                    </div>
+                    <div class="calendar-days">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="days"></div>
+                </div>
+            </section>
+        </section>
+
+        <section class="images-of-stgeorge">
+            <picture id="sunrise">
+                <img loading="lazy" src="./images/wdd230-medium.webp" alt="image desc" width="1200"
+                    height="500">
+            </picture>
+            <picture id="caves">
+                <img loading="lazy" src="./images/wdd230-medium.webp" alt="image desc" width="1200"
+                    height="500">
+            </picture>
+            <picture id="courthouse">
+                <img loading="lazy" src="./images/wdd230-medium.webp" alt="image desc" width="1200"
+                    height="500">
+            </picture>
+            <picture id="school">
+                <img loading="lazy" src="./images/wdd230-medium.webp" alt="image desc" width="1200" height="500">
+            </picture>
+            <picture id="parade">
+                <img loading="lazy" src="./images/wdd230-medium.webp" alt="image desc" width="1200"
+                    height="500">
+            </picture>
+            <picture id="old">
+                <img loading="lazy" src="./images/wdd230-medium.webp" alt="image desc" width="1200"
+                    height="500">
+            </picture>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <p>Phone #: 123-123-1234</p>
+            <p>Email: placeholder@chamber.com</p>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+        <p>&copy; Grayden - WDD 230 Project</p>
+        <p>lastModified placeholder for script: 1/15/25 </p>
+    </footer>
+
+</body>
+
+</html>

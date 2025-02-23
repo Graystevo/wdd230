@@ -1,5 +1,5 @@
 /* Larger Views ******************************/
-@media (min-width: 860px) {
+@media (min-width: 840px) {
     .header-nav ul {
         flex-direction: row;
         /* Arrange links horizontally */
@@ -18,7 +18,7 @@
 
     .content {
         grid-column: 1/4;
-        
+
     }
 
     .current-events {
@@ -33,7 +33,7 @@
         border: none;
     }
 
-    .spotlight-card > * {
+    .spotlight-card>* {
         box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
     }
 
@@ -46,6 +46,67 @@
     }
 
     .map-container iframe {
-        width: 800px;  /* Adjust height for larger screens */
+        width: 800px;
+        /* Adjust height for larger screens */
+    }
+
+    .left-bar {
+        grid-column: 1/2;
+        grid-row: 1/4;
+    }
+
+    #calendar {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        margin: 0;
+        padding: 0;
+        height: auto;
+    }
+
+    .population {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .main-attraction {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .images-of-stgeorge {
+        grid-column: 2/4;
+        grid-row: 2/4;
+        height: auto;
+        gap: 20px;
+        background-color: #0f4c81;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+    .images-of-stgeorge img:hover {
+        /* hover effect */
+        box-shadow: 0 0 100px #333;
+    }
+
+    .visits {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        font-size: 2rem;
+
+    }
+
+    #sunrise {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    #caves {
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 }
