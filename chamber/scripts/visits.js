@@ -1,27 +1,23 @@
 const msToDays = 86400000;
 const theDateToday = new Date();
 
-const todayElement = document.querySelector("#today");
-const today = Date.now();
-
-const lastVisit = localStorage.getItem('lastVisit');
 const sidebarContent = document.getElementById('visits');
+const lastVisit = localStorage.getItem('lastVisit');
 
 if (!lastVisit) {
     sidebarContent.innerHTML = "Welcome! Let us know if you have any questions.";
-}
-else {
+} else {
     const lastVisitDate = new Date(lastVisit);
-    const timeDifference = currentDate - lastVisitDate;
+    const timeDifference = theDateToday - lastVisitDate;
+    const daysSinceLastVisit = Math.floor(timeDifference / msToDays);
 
-    const daysSinceLastVisit = Math.floor(timeDifference/msToDays);
-
-    if (daysSinceLastVisit < 1){
+    if (daysSinceLastVisit < 1) {
         sidebarContent.innerHTML = "Back so soon! Awesome!";
-    }
-    else {
+    } else {
         const dayText = daysSinceLastVisit === 1 ? 'day' : 'days';
-        sidebarContent.innerHTML = `You last visited ${daysSinceLastVisit} ${dayText} ago`;
+        sidebarContent.innerHTML = `You last visited ${daysSinceLastVisit} ${dayText} ago.`;
     }
-    localStorage.setItem('lastVisit', currentDate.toISOString());
-};
+}
+
+// Always update localStorage with the current visit date
+localStorage.setItem('lastVisit', theDateToday.toISOString());
