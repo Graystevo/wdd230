@@ -457,6 +457,7 @@ footer .social-links img {
     grid-template-columns: repeat(7, 1fr);
     margin-top: 5px;
     border: solid 1px black;
+    min-height: 200px; /* Reserve space for calendar */
 }
 
 #days div {
@@ -477,7 +478,7 @@ footer .social-links img {
     color: #FFFFFF;
     background-color: #0f4c81;
     font-size: 2rem;
-
+    min-height: 50px; /* Reserve space for visit message */
 }
 
 .left-bar {
