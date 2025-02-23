@@ -21,3 +21,4 @@ if (!lastVisit) {
 
 // Always update localStorage with the current visit date
 localStorage.setItem('lastVisit', theDateToday.toISOString());
+

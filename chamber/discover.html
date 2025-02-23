@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grayden - WDD 230 - Chamber of Commerce - Discover</title>
     <link rel="icon" href="./images/favicon.ico">
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="preload" href="styles/base.css" as="style">
+    <link rel="preload" href="styles/larger.css" as="style">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Discover page Assignment">
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Discover page Assignment">
     <meta name="author" content="Graystevo">
     <meta property="og:title" content="Grayden - WDD 230 - Chamber Discover Page">
     <meta property="og:type" content="website">
@@ -19,10 +23,10 @@
     <script src="./scripts/getdates.js" defer></script>
     <script src="./scripts/calendar.js" defer></script>
     <script src="./scripts/visits.js" defer></script>
+    <link rel="preload" as="image" href="https://picsum.photos/800/500.jpg?hmac=PXi7kmt03" fetchpriority="high">
 </head>
 
 <body>
-
     <header>
         <div class="header-grid">
             <div class="logo">
@@ -57,7 +61,8 @@
             </section>
             <section class="main-attraction">
                 <h2>Main Attractions</h2>
-                <p>St. George is a wonderful central point for several national parks. We have plenty of hiking, biking, and water sports available too!</p>
+                <p>St. George is a wonderful central point for several national parks. We have plenty of hiking, biking,
+                    and water sports available too!</p>
             </section>
             <section id="calendar">
                 <div class="calendar">
@@ -81,28 +86,35 @@
         </section>
 
         <section class="images-of-stgeorge">
-            <picture id="sunrise">
-                <img loading="lazy" src="https://picsum.photos/1200/500?random=1" alt="picture of sunrise in St. George" width="800"
-                    height="500">
-            </picture>
+            <div class="picture-container">
+                <picture id="first-image">
+                    <img src="https://picsum.photos/800/500.jpg?hmac=PXi7kmt03" width="800" height="500" alt="LCP Image">
+                </picture>
+            </div>
+            <div class="picture-container">
+                <picture id="sunrise">
+                    <img loading="lazy" src="https://picsum.photos/800/500?random=2" alt="Picture of sunrise in St. George" width="800" height="500">
+                </picture>
+            </div>
             <picture id="caves">
-                <img loading="lazy" src="https://picsum.photos/1200/500?random=2" alt="Picture of Red Rock canyons" width="800"
-                    height="500">
+                <img loading="lazy" src="https://picsum.photos/800/500?random=3" alt="Picture of Red Rock canyons"
+                    width="800" height="500">
             </picture>
             <picture id="courthouse">
-                <img loading="lazy" src="https://picsum.photos/1200/500?random=3" alt="St George Courthouse picture" width="800"
-                    height="500">
+                <img loading="lazy" src="https://picsum.photos/800/500?random=4" alt="St George Courthouse picture"
+                    width="800" height="500">
             </picture>
             <picture id="school">
-                <img loading="lazy" src="https://picsum.photos/1200/500?random=4" alt="St George Pineview High school picture" width="800" height="500">
+                <img loading="lazy" src="https://picsum.photos/800/500?random=5"
+                    alt="St George Pine view High school picture" width="800" height="500">
             </picture>
             <picture id="parade">
-                <img loading="lazy" src="https://picsum.photos/1200/500?random=5" alt="St George Parade picture" width="800"
-                    height="500">
+                <img loading="lazy" src="https://picsum.photos/800/500?random=6" alt="St George Parade picture"
+                    width="800" height="500">
             </picture>
             <picture id="old">
-                <img loading="lazy" src="https://picsum.photos/1200/500?random=6" alt="picture of old town main street St. George" width="800"
-                    height="500">
+                <img loading="lazy" src="https://picsum.photos/800/500?random=7"
+                    alt="picture of old town main street St. George" width="800" height="500">
             </picture>
         </section>
 

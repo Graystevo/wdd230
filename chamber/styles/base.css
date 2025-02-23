@@ -177,6 +177,7 @@ main {
     margin: 0 auto;
     justify-items: center;
     /* Center columns when single column */
+    min-height: 800px; /* Adjust based on content */
 }
 
 .content,
@@ -386,16 +387,30 @@ footer .social-links img {
     height: auto;
     gap: 20px;
     background-color: #0f4c81;
-    margin: 0 auto;
     padding: 10px;
+    border: 2px solid black;
 }
 
 .images-of-stgeorge img {
+    max-width: 1000px;
     width: 100%;
     height: auto;
+}
+
+.picture-container {
+    width: 100%;
+    aspect-ratio: 800 / 500; /* Matches your image dimensions */
+    position: relative;
+    overflow: hidden;
+}
+
+.picture-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #calendar {
