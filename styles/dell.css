@@ -1,0 +1,209 @@
+/* RESET/BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000; /* Typically Dell uses a dark bar */
+  padding: 0.5rem 1rem;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin-right: 1rem;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.search-box input {
+  padding: 0.3rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  outline: none;
+}
+
+.search-box button {
+  background-color: #007DB8;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.language-selector button,
+.sign-in button {
+  background: none;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 0.3rem 0.6rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.language-selector button:hover,
+.sign-in button:hover {
+  background-color: #333;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #00509E; /* Blue background to mimic Dell’s style */
+  color: #fff;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #fff;
+  color: #00509E;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CATEGORY GRID */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.category-item {
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  text-align: center;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.category-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.category-item h3 {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* FOOTER */
+.main-footer {
+  background-color: #eee;
+  padding: 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-us-button {
+  text-decoration: none;
+  background-color: #00509E;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.contact-us-button:hover {
+  background-color: #003b7a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .hero-content, .hero-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}

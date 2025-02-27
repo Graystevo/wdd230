@@ -68,14 +68,10 @@ input::placeholder {
 	animation: shaketext 500ms;
 }
 
-/* input[required] ^ label::after {
-	font-size: 10px;
-	content: " *️⃣";
-} */
-
-.req::after {
-	font-size: 10px;
-	content: " *️⃣";
+label[for]:has(+ input[required])::after {
+	font-size: 20px;
+    font-weight: bolder;
+	content: " *";
 }
 
 .smaller {
@@ -85,16 +81,9 @@ input::placeholder {
 	right: 10px;
 }
 
-@keyframes shaketext {
-	25% {
-		transform: translateX(3px);
-	}
-	50% {
-		transform: translateX(-3px);
-	}
-	75% {
-		transform: translateX(3px);
-	}
+#r {
+	width: 100%;
+	margin-bottom: 0;
 }
 
 #rangevalue {
