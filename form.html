@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayden - WDD 230 - Web Frontend Development</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. course assignment portal">
+    <meta name="author" content="Graystevo">
+    <meta property="og:title" content="Grayden - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://www.mountainbikebill.com/images/Trails/UT-ChurchRocks/UT-ChurchRocks-Splash.jpg">
+    <meta property="og:url" content="https://graystevo.github.io/wdd230">
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-grid">
+            <div class="logo">
+                <img src="images/project_one_logo.png" alt="me Logo">
+                <h1>Grayden Stevens</h1>
+            </div>
+
+            <nav class="header-nav">
+                <button id="menu" class="" aria-label="menu button"> </button>
+                <ul class="navigation">
+                    <li><a href="./index.html" title="Home" class="active">Home</a></li>
+                    <li><a href="./lesson03/chamber-site-plan.html">Site Plan</a></li>
+                    <li><a href="./chamber/">Chamber</a></li>
+                    <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1"
+                            target="_blank">Scripture</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="formmessage"></div>
+        <h1>Contact Us</h1>
+        <form method="get">
+            <p class="smaller">*️⃣ Indicates a required field</p>
+
+            <label for="fullname" class="req">Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
+
+            <label for="email" class="req">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Please use your school email address">
+
+            <label for="keyphrase">Your password</label>
+            <input type="text" id="keyphrase" name="keyphrase" pattern="[a-zA-Z -]{6,}"
+                placeholder="At least six characters long. No numbers.">
+
+            <label for="keyphrase2">Re-enter Your password</label>
+            <input type="text" id="keyphrase2" name="keyphrase2">
+
+            <label for="r">INPUT: range, min, max, datalist, required</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+
+            <button id="btnSubmit" type="submit">Send Message</button>
+            <input type="hidden" value="43aster">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 1/15/25 - Grayden - United States</p>
+        <div class="social-links">
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
