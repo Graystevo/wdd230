@@ -46,8 +46,8 @@
     <main>
         <div id="formmessage"></div>
         <h1>Contact Us</h1>
-        <form method="get">
-            <p class="smaller">*️⃣ Indicates a required field</p>
+        <form method="get" action="record.html" target="_blank">
+            <p class="smaller">* Indicates a required field</p>
 
             <label for="fullname" class="req">Name</label>
             <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
@@ -80,7 +80,7 @@
             </datalist>
 
             <button id="btnSubmit" type="submit">Join us!</button>
-            <input type="hidden" value="Validate">
+            <input type="hidden" name="action" value="Validate">
         </form>
     </main>
 
