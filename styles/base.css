@@ -1,3 +1,4 @@
+/* ================== base.css ================== */
 /* General Reset */
 * {
     margin: 0;
@@ -20,21 +21,17 @@ header {
 .header-grid {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column */
     grid-auto-rows: auto;
     gap: 10px;
     align-items: center;
     justify-items: center;
-    /* Center content horizontally */
 }
 
 /* Logo Styling */
 .logo {
     display: flex;
-    /* Aligns the logo image and title horizontally */
     align-items: center;
     gap: 10px;
-    /* Space between the logo and title */
 }
 
 .logo img {
@@ -47,7 +44,6 @@ header {
     font-weight: bold;
     color: #000;
     margin: 0;
-    /* Remove default margin */
 }
 
 /* Title Styling */
@@ -59,7 +55,6 @@ header {
 .header-nav {
     margin-top: 0;
     width: 100%;
-    /* Remove negative margin */
 }
 
 .header-nav ul {
@@ -105,7 +100,6 @@ header {
     text-decoration: none;
     color: #fff;
     gap: 10px;
-    /* Space between links */
 }
 
 .navigation a:hover {
@@ -162,27 +156,23 @@ p {
     font-family: "Great Vibes", serif;
 }
 
+/* Main layout for home page */
 main {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column by default */
     gap: 20px;
-    /* Space between sections */
     padding: 5px;
     padding-top: 0px;
     max-width: 960px;
     margin: 0 auto;
     justify-items: center;
-    /* Center columns when single column */
 }
 
 .content,
 .card,
 .information-card {
     width: 100%;
-    /* Full width within the centered container */
     max-width: 960px;
-    /* Limit content width */
 }
 
 .content {
@@ -193,10 +183,7 @@ main {
 .content h2 {
     text-align: center;
     border-bottom: 1px solid #000000;
-    /* Solid bottom border */
     padding-bottom: 5px;
-    /* Space between text and border */
-
 }
 
 .card,
@@ -204,7 +191,6 @@ main {
     background-color: #baddf8;
     border: 1px solid black;
 }
-
 
 .card h3 {
     text-align: center;
@@ -283,9 +269,7 @@ main {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    /* Logo, Title, Empty Space */
     grid-template-rows: auto auto;
-    /* Separate rows for title and nav */
     text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
@@ -309,4 +293,123 @@ footer .social-links img {
     height: 20px;
     margin: 0 5px;
     cursor: pointer;
+}
+
+/* ================== Membership Application Specific Styles ================== */
+.membership {
+  /* Override main styling for the membership form page */
+  display: block;
+  margin: 20px auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.membership .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.membership form {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.membership form label {
+  color: navy;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.membership form input,
+.membership form textarea,
+.membership form select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid navy;
+  font-size: 1.1rem;
+}
+
+.membership form input:focus,
+.membership form textarea:focus,
+.membership form select:focus {
+  outline: none;
+}
+
+.membership form input::placeholder,
+.membership form textarea::placeholder {
+  font-size: 13px;
+}
+
+/* Append an asterisk for required fields */
+.membership form label:has(input[required]),
+.membership form label:has(textarea[required]),
+.membership form label:has(select[required])::after {
+  content: " *";
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Two column layout for larger screens on membership page */
+@media (min-width: 768px) {
+  .membership {
+    max-width: 800px;
+  }
+  .membership .form-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .membership form {
+    flex: 1;
+    margin: 0;
+  }
+  .membership .benefits {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 1px solid #ccc;
+  }
+}
+
+/* ================== larger.css (Larger Views) ================== */
+@media (min-width: 662px) {
+    .header-nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+    #menu {
+        display: none;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+    }
+    .content {
+        grid-column: 1/3;
+    }
+    .card {
+        grid-column: 1/2;
+        grid-row: 2;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        margin-left: 10px;
+    }
+    .information-card {
+        margin-right: 10px;
+        grid-column: 2/3;
+        grid-row: 2;
+        align-self: start;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    }
+    .map-container iframe {
+        max-width: 960px;
+        padding: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
