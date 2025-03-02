@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grayden - WDD 230 - Chamber of Commerce</title>
+    <title>Grayden - WDD 230 - Join Us!</title>
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
@@ -44,7 +44,43 @@
     </header>
 
     <main>
-        
+        <div id="formmessage"></div>
+        <h1>Contact Us</h1>
+        <form method="get" action="thankyou.html" target="_blank">
+            <p class="smaller">* Indicates a required field</p>
+
+            <label for="fullname" class="req">Name</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Please enter your full name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your byui email address"
+                title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+
+            <label for="keyphrase">Your password</label>
+            <input type="password" id="keyphrase" name="keyphrase" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$"
+                required placeholder="At least eight characters long. No numbers.">
+
+            <label for="keyphrase2">Re-enter Your password</label>
+            <input type="password" id="keyphrase2" name="keyphrase2" required>
+
+            <label for="r">Rate the Site!</label>
+            <div id="rangevalue">1</div>
+            <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="1">6</option>
+                <option value="2">7</option>
+                <option value="3">8</option>
+                <option value="4">9</option>
+                <option value="5">10</option>
+            </datalist>
+
+            <button id="btnSubmit" type="submit" name="action">Create Account / Join Us</button>
+            <input type="hidden" value="Validate">
     </main>
 
 
