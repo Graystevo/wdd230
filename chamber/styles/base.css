@@ -580,12 +580,18 @@ button {
     margin: 10px;
 }
 
-.membership .benefits {
+.benefits {
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
+    text-align: center;
 }
 
-.benefits ul li {
+.benefits ul {
     list-style-type: none;
+    text-align: left;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
