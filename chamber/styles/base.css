@@ -163,7 +163,7 @@ nav a:visited {
 /* everything else lole */
 
 h1 {
-    margin: 0;
+    margin: 0px;
 }
 
 main {
@@ -177,7 +177,7 @@ main {
     margin: 0 auto;
     justify-items: center;
     /* Center columns when single column */
-    min-height: 800px; /* Adjust based on content */
+    /* Adjust based on content */
 }
 
 .content,
@@ -399,7 +399,8 @@ footer .social-links img {
 
 .picture-container {
     width: 100%;
-    aspect-ratio: 800 / 500; /* Matches your image dimensions */
+    aspect-ratio: 800 / 500;
+    /* Matches your image dimensions */
     position: relative;
     overflow: hidden;
 }
@@ -472,7 +473,8 @@ footer .social-links img {
     grid-template-columns: repeat(7, 1fr);
     margin-top: 5px;
     border: solid 1px black;
-    min-height: 200px; /* Reserve space for calendar */
+    min-height: 200px;
+    /* Reserve space for calendar */
 }
 
 #days div {
@@ -493,7 +495,8 @@ footer .social-links img {
     color: #FFFFFF;
     background-color: #0f4c81;
     font-size: 2rem;
-    min-height: 50px; /* Reserve space for visit message */
+    min-height: 50px;
+    /* Reserve space for visit message */
 }
 
 .left-bar {
@@ -504,8 +507,88 @@ footer .social-links img {
     /* border: solid 1px black; */
 }
 
-.left-bar > *{
-    box-sizing: border-box; /* Ensures padding/border are included in width/height */
-    border: 2px solid black; /* Adds a visible border */
-    padding: 10px; /* Optional: adds space inside the border */
+.left-bar>* {
+    box-sizing: border-box;
+    /* Ensures padding/border are included in width/height */
+    border: 2px solid black;
+    /* Adds a visible border */
+    padding: 10px;
+    /* Optional: adds space inside the border */
+}
+
+/* ================== Membership Application Specific Styles ================== */
+.membership {
+    /* Override main styling for the membership form page */
+
+    background-color: #fff;
+    padding: 10px;
+}
+
+.membership form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.membership form textarea {
+
+}
+
+.membership .form-container {
+    border: 1px solid black;
+    padding: 10px;
+    width: 400px
+}
+
+.membership form label {
+    color: var(--secondary-color);
+    font-size: 16px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.membership form input,
+.membership form textarea,
+.membership form select {
+    margin-bottom: 10px;
+    border: 0;
+    border-bottom: 1px solid black;
+    font-size: 1.1rem;
+    width: 250px;
+}
+
+.membership form input:focus,
+.membership form textarea:focus,
+.membership form select:focus {
+    outline: none;
+}
+
+.membership form input::placeholder,
+.membership form textarea::placeholder {
+    font-size: 13px;
+}
+
+/* Append an asterisk for required fields */
+.membership form label:has(input[required]),
+.membership form label:has(textarea[required]),
+.membership form label:has(select[required])::after {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+button {
+    margin: 10px;
+}
+
+.membership .benefits {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+.benefits ul li {
+    list-style-type: none;
 }
