@@ -115,6 +115,10 @@
         margin: 0;
     }
 
+    .benefits {
+        width: 95%;
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -170,6 +174,7 @@
 
     .benefits {
         grid-column: 3/5;
+        width: 95%;
     }
 
 }
