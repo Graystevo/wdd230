@@ -296,7 +296,7 @@ footer .social-links img {
 }
 
 /* ================== Membership Application Specific Styles ================== */
-.membership {
+main .membership {
   /* Override main styling for the membership form page */
   display: block;
   margin: 20px auto;
