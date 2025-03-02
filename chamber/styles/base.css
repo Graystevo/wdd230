@@ -590,9 +590,7 @@ button {
     
 }
 
-.benefits ul {
-    list-style-type: none;
-
+.benefits {
     padding-top: 25px;
     display: flex;
     flex-direction: column;
