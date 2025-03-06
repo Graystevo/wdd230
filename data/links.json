@@ -1,0 +1,41 @@
+{
+  "lessons": [
+    {
+        "lesson": "02",
+        "links": [
+            {
+            "url": "./lesson02/media-query.html",
+            "title": "Media Queries"
+            },
+            {
+            "url": "./lesson02/design-principles.html",
+            "title": "Design Principles Document"
+            }
+        ],
+
+        "lesson": "03",
+        "links": [
+            {
+            "url": "./lesson02/media-query.html",
+            "title": "Media Queries"
+            },
+            {
+            "url": "./lesson02/design-principles.html",
+            "title": "Design Principles Document"
+            }
+        ],
+
+        "lesson": "04",
+        "links": [
+            {
+            "url": "./lesson02/media-query.html",
+            "title": "Media Queries"
+            },
+            {
+            "url": "./lesson02/design-principles.html",
+            "title": "Design Principles Document"
+            }
+        ]
+    }
+  ]
+}
