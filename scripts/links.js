@@ -26,8 +26,6 @@ function displayLinks(lessons) {
     // Loop through each link for this lesson
     lesson.links.forEach((link, index) => {
       const a = document.createElement("a");
-      // Use the following if your URLs are relative and need the baseURL:
-      // a.href = baseURL + link.url;
       a.href = link.url;
       a.textContent = link.title;
       li.appendChild(a);
