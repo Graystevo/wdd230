@@ -85,6 +85,10 @@
                 {
                     "url": "./lesson09/new-ward-members.json",
                     "title": "JSON"
+                },
+                {
+                    "url": "./lesson09/prophets.html",
+                    "title": "The Fetch API"
                 }
             ]
         },
