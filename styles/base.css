@@ -216,7 +216,7 @@ main {
 }
 
 .card ol {
-    list-style-type: decimal-leading-zero;
+    list-style-type: none;
     list-style-position: inside;
 }
 
@@ -250,7 +250,7 @@ main {
 }
 
 .information-card ul {
-    list-style-type: decimal-leading-zero;
+    list-style-type: none;
     list-style-position: inside;
 }
 
