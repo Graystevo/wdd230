@@ -72,10 +72,6 @@
                 {
                     "url": "./lesson06/images/landscape.jpg",
                     "title": "Squooshed landscape"
-                },
-                {
-                    "url": "",
-                    "title": ""
                 }
             ]
         },
@@ -85,10 +81,6 @@
                 {
                     "url": "./lesson09/new-ward-members.json",
                     "title": "JSON"
-                },
-                {
-                    "url": "",
-                    "title": ""
                 }
             ]
         },
