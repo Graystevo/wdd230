@@ -6,45 +6,38 @@ async function getLinks() {
   const data = await response.json();
   // For testing purposes, you might want to log the data:
   // console.log(data);
-  displayLinks(data);
+  displayLinks(data.lessons);
 }
 
 getLinks();
 
-function displayLinks(weeks) {
-  // Select the ordered list within the Learning Activities section
+function displayLinks(lessons) {
   const olElement = document.querySelector("section.card ol");
-  // Clear out any existing content
   olElement.innerHTML = "";
 
-  // Loop through each week (each object in the array)
-  weeks.forEach((week) => {
+  lessons.forEach(lesson => {
     const li = document.createElement("li");
+    
+    // Prepend the lesson number (e.g., "Lesson 02: ")
+    const lessonSpan = document.createElement("span");
+    lessonSpan.textContent = "Lesson " + lesson.lesson + ": ";
+    li.appendChild(lessonSpan);
 
-    // Assuming each week has a "links" property that is an array of objects
-    // with "url" and "title" keys.
-    if (Array.isArray(week.links)) {
-      week.links.forEach((link, index) => {
-        const a = document.createElement("a");
-        // If your URLs are relative and need the base URL, uncomment the line below:
-        // a.href = baseURL + link.url;
-        a.href = link.url;
-        a.textContent = link.title;
-        li.appendChild(a);
-
-        // Add separator for multiple links
-        if (index < week.links.length - 1) {
-          li.appendChild(document.createTextNode(" | "));
-        }
-      });
-    } else {
-      // In case week.links is a single object rather than an array
+    // Loop through each link for this lesson
+    lesson.links.forEach((link, index) => {
       const a = document.createElement("a");
-      a.href = week.links.url;
-      a.textContent = week.links.title;
+      // Use the following if your URLs are relative and need the baseURL:
+      // a.href = baseURL + link.url;
+      a.href = link.url;
+      a.textContent = link.title;
       li.appendChild(a);
-    }
 
+      // Add a separator if there are multiple links
+      if (index < lesson.links.length - 1) {
+        li.appendChild(document.createTextNode(" | "));
+      }
+    });
+    
     olElement.appendChild(li);
   });
 }
