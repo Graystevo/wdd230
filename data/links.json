@@ -62,7 +62,11 @@
             "links": [
                 {
                     "url": "./lesson07/bom.html",
-                    "title": "Book of Mormon Favorite Chapter"
+                    "title": "Web Storage API - localStorage"
+                },
+                {
+                    "url" : "./lesson07/lazyload.html",
+                    "title" : "Lazy Loading"
                 }
             ]
         },
@@ -70,8 +74,8 @@
             "lesson": "08",
             "links": [
                 {
-                    "url": "./lesson06/images/landscape.jpg",
-                    "title": "Squooshed landscape"
+                    "url": "./form.html",
+                    "title": "Forms"
                 }
             ]
         },
