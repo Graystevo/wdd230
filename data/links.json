@@ -1,41 +1,109 @@
 {
-  "lessons": [
-    {
-        "lesson": "02",
-        "links": [
-            {
-            "url": "./lesson02/media-query.html",
-            "title": "Media Queries"
-            },
-            {
-            "url": "./lesson02/design-principles.html",
-            "title": "Design Principles Document"
-            }
-        ],
-
-        "lesson": "03",
-        "links": [
-            {
-            "url": "./lesson02/media-query.html",
-            "title": "Media Queries"
-            },
-            {
-            "url": "./lesson02/design-principles.html",
-            "title": "Design Principles Document"
-            }
-        ],
-
-        "lesson": "04",
-        "links": [
-            {
-            "url": "./lesson02/media-query.html",
-            "title": "Media Queries"
-            },
-            {
-            "url": "./lesson02/design-principles.html",
-            "title": "Design Principles Document"
-            }
-        ]
-    }
-  ]
+    "lessons": [
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "./lesson02/media-query.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "./lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "https://codepen.io/sngwvajt-the-bashful/pen/YPKRYxM",
+                    "title": "Pseudo-elements"
+                },
+                {
+                    "url" : "./lesson03/images/combinator-complete.jpg",
+                    "title" : "Combinators"
+                },
+                {
+                    "url" : "https://codepen.io/sngwvajt-the-bashful/pen/mybQpxb",
+                    "title" : "Hamburger Menu"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/sngwvajt-the-bashful/pen/PwYVLBQ",
+                    "title": "Pseudo-classes"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "./lesson05/bom.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "./lesson06/images/landscape.jpg",
+                    "title": "Squooshed landscape"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "./lesson07/bom.html",
+                    "title": "Book of Mormon Favorite Chapter"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "./lesson06/images/landscape.jpg",
+                    "title": "Squooshed landscape"
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "./lesson09/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "",
+                    "title": ""
+                },
+                {
+                    "url": "",
+                    "title": ""
+                }
+            ]
+        }
+    ]
 }
