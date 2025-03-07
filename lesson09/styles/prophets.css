@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
   font-size: 16px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header,
@@ -11,6 +14,7 @@ footer {
   position: relative;
 }
 
+/* Header styling */
 h1 {
   color: #000;
   border-bottom: 1px solid #eee;
@@ -18,10 +22,11 @@ h1 {
   width: 60%;
 }
 
+/* Section headings */
 h2 {
   color: navy;
   margin: 0 0 1rem 0;
-	 border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
 }
 
 h3 {
@@ -41,11 +46,67 @@ main {
   margin-left: 2rem;
 }
 
-.grid {
+/* --- Grid Layout for Dynamic Content --- */
+/* Grid container for the Prophet Cards */
+#cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
 }
 
+/* Prophet card styling within the #cards container */
+#cards section {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cards section h2 {
+  margin-bottom: 0.5rem;
+}
+
+#cards section img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* --- Learning Activities Card Styling --- */
+/* This applies to the section with class "card" */
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+}
+
+/* Remove default list styling for activities */
+.card ol {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 0.5rem;
+}
+
+/* Style the lesson number (prepended in each list item) */
+.card li span {
+  font-weight: bold;
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+/* --- Fallback Section Styling --- */
 section {
   margin: 0.25rem;
   padding: 0.35rem;
@@ -59,64 +120,4 @@ section > p {
   min-height: 60px;
 }
 
-img {
-  width: auto;
-	max-width: 325px;
-  box-shadow: 0 0 30px #777;
-  height: 200px;
-  border: 1px solid #333;
-}
-
-li > img {
-  width: auto;
-  height: 30px;
-}
-
-footer {
-  border-top: 1px solid #555;
-  padding: 20px;
-}
-
-.caption {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  border: 1px solid #ccc;
-  background-color: lightyellow;
-  padding: 0.25rem;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1rem 1fr;
-}
-
-.caption h6 {
-  position: absolute;
-  top: -2.3rem;
-  left: -0.25rem;
-}
-
-.caption > div {
-  width: 0.75rem;
-  height: 0.75rem;
-  border: 1px solid #bbb;
-}
-
-.caption > p {
-  font-size: 0.75rem;
-}
-
-.most {
-  background-color: #bed;
-}
-
-.fav {
-  background-color: skyblue;
-}
-
-.own {
-  background-color: rosybrown;
-}
-
-.un {
-	list-style: none;
-}
+/* --- Global Image St
