@@ -587,7 +587,7 @@ button {
     text-align: center;
     width: auto;
     width: 400px;
-    
+
 }
 
 .benefits {
@@ -598,97 +598,97 @@ button {
 }
 
 .menu {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: #bed;
-	text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #bed;
+    text-align: center;
 }
 
 .menu button {
-	padding: 1rem;
-	font-weight: 700;
+    padding: 1rem;
+    font-weight: 700;
 }
 
 button.active {
     background-color: #007bff;
     color: white;
-  }
+}
 
 section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.1rem;
-	background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.1rem;
+    background-color: #eee;
 }
 
 .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 10px;
-	align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
     margin-left: 20px;
     margin-right: 20px;
 }
 
 .grid section {
-	text-align: center;
+    text-align: center;
     width: 100%;
     height: 100%;
 }
+
 .grid section a {
-	align-items: center;
+    align-items: center;
 }
 
 .grid img {
     width: 100px;
-	box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 5px #333;
 }
 
-.grid section > * {
-	margin: 0.1rem;
+.grid section>* {
+    margin: 0.1rem;
 }
 
 .grid h3 {
-	font-family: "Caveat", cursive;
+    font-family: "Caveat", cursive;
 }
 
 .list {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
     width: fit-content;
 }
 
-.list section {
+.list section {}
 
-}
-
-.list section > * {
-	margin: 0 1rem;
+.list section>* {
+    margin: 0 1rem;
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+    display: none;
+    /* smaller viewports only */
 }
 
 .list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+    background-color: #bed;
 }
 
 section h3 {
-	font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 section p {
-	font-weight: 600;
-	font-size: smaller;
+    font-weight: 600;
+    font-size: smaller;
 }
 
 section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
 }
