@@ -615,7 +615,7 @@ button.active {
 
 section {
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
+	padding: 0.1rem;
 	background-color: #eee;
 }
 
@@ -624,10 +624,17 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 10px;
 	align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .grid section {
 	text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.grid section a {
+	align-items: center;
 }
 
 .grid img {

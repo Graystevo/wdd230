@@ -139,7 +139,7 @@
 
     .list .details {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 2fr;
         /* 3 equal columns */
         gap: 10px;
         padding-bottom: 10px;
@@ -156,7 +156,7 @@
     }
 
     /* Phone */
-    .details p:nth-child(3) {
+    .list .details p:nth-child(3) {
         grid-column: 3;
         text-align: left;
     }
