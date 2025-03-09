@@ -9,17 +9,19 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Directory of members">
+    <meta name="description"
+        content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Directory of members">
     <meta name="author" content="Graystevo">
     <meta property="og:title" content="Grayden - WDD 230 - Chamber Directory Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://stgeorgechamber.com/wp-content/uploads/2020/09/smiling-worker.jpg">
     <meta property="og:url" content="https://graystevo.github.io/wdd230/chamber/directory.html">
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/toggleview.js"></script>
+    <script src="./scripts/members.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="header-grid">
             <div class="logo">
@@ -43,67 +45,14 @@
     </header>
 
     <main>
-
-        <section class="content">
-            <div class="hero">
-                <picture>
-                    <source srcset="./images/wdd230-small.webp" media="(max-width:500px)">
-                    <source srcset="./images/wdd230-medium.webp" media="(max-width:1000px)">
-                    <img src="./images/wdd230-large.webp" alt="Hero Image of people smiling in an office">
-                </picture>
-                <div class="herolabel">
-                    <h2>Join the Chamber!</h2>
-                </div>
-            </div>
-        </section>
-
-        <section class="current-events">
-            <h3>
-                Events
-            </h3>
-            <h4>
-                Ribbon Cutting - The Diamond Shack
-            </h4>
-            <p>description of event, maybe location, date, time, number</p>
-        </section>
-
-        <section class="spotlight-card">
-
-
-            <div id="spotlight-card1">
-                <h4>
-                    Company 1
-                </h4>
-                <p>company 1 desc</p>
-            </div>
-
-            <div id="spotlight-card2">
-                <h4>
-                    Company 2
-                </h4>
-                <p>company 2 desc</p>
-            </div>
-
-            <div id="spotlight-card3">
-                <h4>
-                    Company 3
-                </h4>
-                <p>company 3 desc</p>
-            </div>
-
-        </section>
-
-        <section class="information-card">
-            <h3>
-                Weather
-            </h3>
-            <img src="./images/sun.svg" alt="picture of a weather">
-            <p><span id="temperature">50</span>&deg;F</p>
-            <p><span id="weather-type">Partly Cloud</span></p>
-            <p><span id="humidity">Humidity: 0%</span></p>
-            <p><span id="wind-speed">Wind Speed: 5 MPH</span></p>
-            <p><span id="wind-chill">N/A</span></p>
-        </section>
+        <div class="menu">
+            <button id="grid"><i class="fa-regular fa-th-large"></i> Grid View</button>
+            <button id="list"><i class="fa-regular fa-list"></i> List View</button>            
+        </div>
+        <hr>
+        <article class="grid">
+ 
+        </article>
     </main>
 
     <footer>
