@@ -638,8 +638,8 @@ section {
 }
 
 .grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+    width: 100px;
+	box-shadow: 0 0 5px #333;
 }
 
 .grid section > * {
