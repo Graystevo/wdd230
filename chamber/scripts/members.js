@@ -1,86 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch data from the local JSON file
+    // Fetch the member data from the JSON file in the "data" folder
     const url = "./data/members.json";
-    const cards = document.querySelector("#cards");
+    const articleContainer = document.querySelector("article");
   
     async function getMemberData() {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        // For testing: console.table(data.companies);
         displayMembers(data.companies);
       } catch (error) {
-        console.error("Error fetching the member data:", error);
+        console.error("Error fetching member data:", error);
       }
     }
   
-    const displayMembers = (members) => {
+    function displayMembers(members) {
       members.forEach((member) => {
-        // Create a container for each member card
-        let card = document.createElement("section");
-        card.classList.add("member-card");
+        // Create a section element for each company (member)
+        const section = document.createElement("section");
   
-        // Company name as header
-        let nameEl = document.createElement("h2");
-        nameEl.textContent = member.name;
-  
-        // Create a details container for additional info
-        let details = document.createElement("div");
-        details.classList.add("details");
-  
-        // Address
-        let address = document.createElement("p");
-        address.textContent = `Address: ${member.address}`;
-        details.appendChild(address);
-  
-        // Phone number
-        let phone = document.createElement("p");
-        phone.textContent = `Phone: ${member.phone}`;
-        details.appendChild(phone);
-  
-        // Website URL as a clickable link
-        let website = document.createElement("a");
-        website.href = member.website;
-        website.textContent = "Visit Website";
-        website.target = "_blank";
-        details.appendChild(website);
-  
-        // Membership level
-        let membership = document.createElement("p");
-        membership.textContent = `Membership: ${member.membership_level}`;
-        details.appendChild(membership);
-  
-        // Additional information (e.g., industry and founded year)
-        let industry = document.createElement("p");
-        industry.textContent = `Industry: ${member.industry}`;
-        details.appendChild(industry);
-  
-        let founded = document.createElement("p");
-        founded.textContent = `Founded: ${member.founded}`;
-        details.appendChild(founded);
-  
-        // Company image or icon
-        let img = document.createElement("img");
-        // Assuming your images are in an "images" folder relative to your HTML file.
-        img.setAttribute("src", `./images/${member.image}`);
-        img.setAttribute("alt", `Logo for ${member.name}`);
+        // Create an image element
+        const img = document.createElement("img");
+        // Assumes images are stored in an "images" folder
+        img.src = `./images/${member.image}`;
+        img.alt = `${member.name} Logo`;
         img.setAttribute("loading", "lazy");
-        img.setAttribute("width", "150");
-        img.setAttribute("height", "150");
   
-        // Assemble the card elements
-    
-        card.appendChild(nameEl);
-        card.appendChild(img);
-        card.appendChild(details);
-        
+        // Create an h3 element for the company name
+        const h3 = document.createElement("h3");
+        h3.textContent = member.name;
   
-        // Append the card to the main container
-        cards.appendChild(card);
+        // Create a paragraph element for the founded year (mimics the year display)
+        const p = document.createElement("p");
+        p.textContent = member.founded;
+  
+        // Create a link element for details (using the company website)
+        const a = document.createElement("a");
+        a.href = member.website;
+        a.target = "_blank";
+        a.textContent = "Details";
+  
+        // Append elements to the section in order (to match the layout)
+        section.appendChild(img);
+        section.appendChild(h3);
+        section.appendChild(p);
+        section.appendChild(a);
+  
+        // Append the section to the main article container
+        articleContainer.appendChild(section);
       });
-    };
+    }
   
-    // Kick off the fetch and display process
+    // Start fetching and displaying member data
     getMemberData();
   });
   
