@@ -598,9 +598,7 @@ button {
 }
 
 .menu {
-	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
 	background-color: #bed;
 	text-align: center;
 }
@@ -622,7 +620,9 @@ section {
 }
 
 .grid {
-	grid-gap: 5px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 10px;
 	align-items: center;
 }
 
@@ -646,13 +646,11 @@ section {
 .list {
 	display: flex;
 	flex-direction: column;
+    width: fit-content;
 }
 
 .list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
+
 }
 
 .list section > * {

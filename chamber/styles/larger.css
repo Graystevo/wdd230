@@ -119,6 +119,30 @@
         width: 95%;
     }
 
+    .menu {
+        grid-column: 1/4;
+        max-height: 75px;
+    }
+
+    .list {
+        grid-column: 1/4;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+    .grid {
+        grid-column: 1/4;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -175,6 +199,20 @@
     .benefits {
         grid-column: 3/5;
         width: 95%;
+    }
+
+    .menu {
+        grid-column: 1/5;
+        max-height: 75px;
+    }
+
+    .grid {
+        grid-column: 1/5;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
     }
 
 }

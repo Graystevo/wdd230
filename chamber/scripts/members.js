@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch the member data from the JSON file in the "data" folder
     const url = "./data/members.json";
     const articleContainer = document.querySelector("article");
   
@@ -15,42 +14,51 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function displayMembers(members) {
       members.forEach((member) => {
-        // Create a section element for each company (member)
         const section = document.createElement("section");
   
-        // Create an image element
+        const h3 = document.createElement("h3");
+        h3.textContent = member.name;
+
         const img = document.createElement("img");
-        // Assumes images are stored in an "images" folder
         img.src = `./images/${member.image}`;
         img.alt = `${member.name} Logo`;
         img.setAttribute("loading", "lazy");
+
+        const details = document.createElement("div");
+        details.classList.add("details");
   
-        // Create an h3 element for the company name
-        const h3 = document.createElement("h3");
-        h3.textContent = member.name;
+        // Address detail
+        const address = document.createElement("p");
+        address.innerHTML = `${member.address}`;
+        details.appendChild(address);
   
-        // Create a paragraph element for the founded year (mimics the year display)
-        const p = document.createElement("p");
-        p.textContent = member.founded;
+        // Phone number detail
+        const phone = document.createElement("p");
+        phone.innerHTML = `${member.phone}`;
+        details.appendChild(phone);
   
-        // Create a link element for details (using the company website)
-        const a = document.createElement("a");
-        a.href = member.website;
-        a.target = "_blank";
-        a.textContent = "Details";
+        // // Membership level detail
+        // const membership = document.createElement("p");
+        // membership.innerHTML = `<strong>Membership Level:</strong> ${member.membership_level}`;
+        // details.appendChild(membership);
   
-        // Append elements to the section in order (to match the layout)
-        section.appendChild(img);
+        // // Industry detail
+        // const industry = document.createElement("p");
+        // industry.innerHTML = `<strong>Industry:</strong> ${member.industry}`;
+        // details.appendChild(industry);
+  
+        const website = document.createElement("p");
+        website.innerHTML = `<a href="${member.website}" target="_blank">${member.website}</a>`;
+        details.appendChild(website);
+  
         section.appendChild(h3);
-        section.appendChild(p);
-        section.appendChild(a);
+        section.appendChild(img);
+        section.appendChild(details);
   
-        // Append the section to the main article container
         articleContainer.appendChild(section);
       });
     }
   
-    // Start fetching and displaying member data
     getMemberData();
   });
   
