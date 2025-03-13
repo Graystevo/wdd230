@@ -249,18 +249,51 @@ main {
     padding: 10px;
 }
 
-.information-card ul {
-    list-style-type: none;
-    list-style-position: inside;
+.information-card {
+
 }
 
-.information-card li {
-    margin: 10px;
+.information-card .weather-card-content {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
 }
 
 .information-card p {
-    margin: 10px;
+    margin: 5px;
+    
     color: #333;
+}
+
+#location-name {
+    grid-row: 1;
+    grid-column: 1/4;
+    height: fit-content;
+    text-align: center;
+    font-weight: bold;
+}
+
+.weather-details {
+    grid-row: 2;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;
+}
+
+#weather-icon {
+
+}
+#figcaption, #temp {
+    margin: 0;
+}
+#temp {
+
+}
+.visits {
+    grid-row: 3;
+    grid-column: 1/5;
+    text-align: center;
 }
 
 .map-container {
