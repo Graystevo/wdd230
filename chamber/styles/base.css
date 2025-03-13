@@ -573,7 +573,7 @@ footer .social-links img {
 .membership form label:has(select[required])::after {
     font-size: 16px;
     font-weight: bold;
-    color: red;
+    color: var(--paragraph-color-on-white);
 }
 
 button {
@@ -587,14 +587,14 @@ button {
     text-align: center;
     width: auto;
     width: 400px;
-
-}
-
-.benefits {
     padding-top: 25px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.benefits h3 {
+    color: var(--headline-color-on-white);
 }
 
 .menu {
