@@ -28,7 +28,6 @@
                 <img src="./images/favicon.webp" alt="chamber Logo">
                 <h1>St. George Chamber of Commerce</h1>
             </div>
-
             <nav class="header-nav">
                 <div id="mode">
                     <p>Mode: 🌑</p>
@@ -36,7 +35,7 @@
                 <button id="menu" class="" aria-label="menu button"> </button>
                 <ul class="navigation">
                     <li><a href="./index.html" title="Home" class="active">Home</a></li>
-                    <li><a href="./discover.html" title="Discover" >Discover</a></li>
+                    <li><a href="./discover.html" title="Discover">Discover</a></li>
                     <li><a href="./directory.html" title="Directory">Directory</a></li>
                     <li><a href="./join.html" title="Join">Join Us!</a></li>
                 </ul>
@@ -44,8 +43,12 @@
         </div>
     </header>
 
-    <main>
+    <div id="meet-banner" class="banner" style="display:none;">
+        <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+        <button id="close-banner" aria-label="Close banner">&times;</button>
+    </div>
 
+    <main>
         <section class="content">
             <div class="hero">
                 <picture>
@@ -58,7 +61,6 @@
                 </div>
             </div>
         </section>
-
         <section class="current-events">
             <h3>
                 Events
@@ -68,43 +70,37 @@
             </h4>
             <p>description of event, maybe location, date, time, number</p>
         </section>
-
         <section class="spotlight-card">
-
-
             <div id="spotlight-card1">
                 <h4>
                     Company 1
                 </h4>
                 <p>company 1 desc</p>
             </div>
-
             <div id="spotlight-card2">
                 <h4>
                     Company 2
                 </h4>
                 <p>company 2 desc</p>
             </div>
-
             <div id="spotlight-card3">
                 <h4>
                     Company 3
                 </h4>
                 <p>company 3 desc</p>
             </div>
-
         </section>
-
         <section class="information-card">
             <h3>
                 Weather
             </h3>
-            <img src="./images/sun.svg" alt="picture of a weather">
-            <p><span id="temperature">50</span>&deg;F</p>
+            <img id="weather-icon" src="./images/sun.svg" alt="Weather icon">
+            <p><span id="current-temp">50</span>&deg;F</p>
             <p><span id="weather-type">Partly Cloud</span></p>
             <p><span id="humidity">Humidity: 0%</span></p>
             <p><span id="wind-speed">Wind Speed: 5 MPH</span></p>
             <p><span id="wind-chill">N/A</span></p>
+            <div id="forecast"></div>
         </section>
     </main>
 
@@ -120,6 +116,7 @@
         <p>lastModified placeholder for script: 1/15/25 </p>
     </footer>
     <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/weather.js"></script>
 </body>
 
 </html>
