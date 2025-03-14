@@ -30,8 +30,12 @@ function displayResults(data) {
   const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
   let desc = data.weather[0].description;
   let capitalizedDesc = capitalizeWords(desc);
+  
   weatherIcon.setAttribute("src", iconsrc);
   captionDesc.textContent = `${capitalizedDesc}`;
+  // Add humidity and wind speed
+  humidity.textContent = `Humidity: ${data.main.humidity}%`;
+  windSpeed.textContent = `Wind Speed: ${Math.round(data.wind.speed)} mph`;
 }
 
 function capitalizeWords(str) {
