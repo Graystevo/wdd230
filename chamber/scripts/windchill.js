@@ -21,7 +21,6 @@ function updateWindChill() {
 
   // Extract temperature value (remove '°F')
   const temperature = parseFloat(
-    tempElement.textContent.replace("°F", "").trim()
   );
 
   // Extract wind speed value (remove 'MPH')

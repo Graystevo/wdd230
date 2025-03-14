@@ -43,13 +43,14 @@
         </div>
     </header>
 
-    <div id="meet-banner" class="banner" style="display:none;">
-        <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
-        <button id="close-banner" aria-label="Close banner">&times;</button>
-    </div>
+   
 
     <main>
         <section class="content">
+            <div id="meet-banner" class="banner" style="display:flex;">
+                <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+                <button id="close-banner" aria-label="Close banner">&times;</button>
+            </div>
             <div class="hero">
                 <picture>
                     <source srcset="./images/wdd230-small.webp" media="(max-width:500px)">
@@ -94,13 +95,15 @@
             <h3>
                 Weather
             </h3>
-            <img id="weather-icon" src="./images/sun.svg" alt="Weather icon">
-            <p><span id="current-temp">50</span>&deg;F</p>
-            <p><span id="weather-type">Partly Cloud</span></p>
-            <p><span id="humidity">Humidity: 0%</span></p>
-            <p><span id="wind-speed">Wind Speed: 5 MPH</span></p>
-            <p><span id="wind-chill">N/A</span></p>
-            <div id="forecast"></div>
+            <div id="current-weather">
+                <img id="weather-icon" src="./images/sun.svg" alt="Weather icon">
+                <p><span id="current-temp">50</span>&deg;F</p>
+                <p><span id="weather-type">Partly Cloud</span></p>
+                <p><span id="humidity">Humidity: 0%</span></p>
+                <p><span id="wind-speed">Wind Speed: 5 MPH</span></p>
+                <p><span id="wind-chill">N/A</span></p>
+            </div>
+            <div id="forecast">djdjdj</div>
         </section>
     </main>
 

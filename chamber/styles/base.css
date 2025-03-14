@@ -614,8 +614,6 @@ button.active {
 }
 
 section {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.1rem;
     background-color: #eee;
 }
 
@@ -691,4 +689,26 @@ section a {
     font-size: 0.85rem;
     color: navy;
     letter-spacing: 1.1pt;
+}
+
+.banner {
+    width: 100%;
+    background-color: #f9edbe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#close-banner {
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 20px;
 }
