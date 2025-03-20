@@ -26,7 +26,7 @@
         "phone": "(555) 321-7890",
         "website": "https://www.urbaneats.com",
         "image": "urban-eats.png",
-        "membership_level": "Platinum",
+        "membership_level": "Gold",
         "industry": "Restaurant",
         "founded": 2015
       },
@@ -56,7 +56,7 @@
         "phone": "(555) 777-8888",
         "website": "https://www.healthfirst.com",
         "image": "health-first.png",
-        "membership_level": "Gold",
+        "membership_level": "NP",
         "industry": "Healthcare",
         "founded": 1988
       },

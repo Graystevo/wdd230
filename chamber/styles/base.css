@@ -192,7 +192,6 @@ main {
 }
 
 .hero {
-    margin: 10px auto;
     margin-top: 0px;
     position: relative;
     height: 300px;
@@ -273,17 +272,16 @@ main {
 /* spotlight card section */
 .spotlight-card {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
-    background-color: white;
 }
 
-.spotlight-card>* {
+.spotlight-card > * {
     background-color: var(--paragraph-background-color);
-    border: 1px solid black;
+    text-align: center;
 }
 
-.spotlight-card h3 {
+/* .spotlight-card h3 {
     grid-column: 1/4;
     text-align: center;
     background-color: #475a68;
@@ -291,14 +289,15 @@ main {
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
-}
+} */
 
 .spotlight-card h4 {
     margin: 10px;
-    color: var(--paragraph-color-on-color)
+    color: var(--paragraph-color-on-color);
+    text-align: center;
 }
 
-.spotlight-card ol {
+/* .spotlight-card ol {
     list-style-type: decimal-leading-zero;
     list-style-position: inside;
     color: var(--paragraph-color-on-color)
@@ -306,7 +305,12 @@ main {
 
 .spotlight-card li {
     margin: 10px;
+} */
+
+.spotlight-card img {
+    max-width: 30%;
 }
+
 
 .spotlight-card a {
     text-decoration: none;
@@ -550,7 +554,6 @@ footer .social-links img {
     background-color: #0f4c81;
     font-size: 2rem;
     min-height: 50px;
-    /* Reserve space for visit message */
 }
 
 .left-bar {
@@ -558,22 +561,16 @@ footer .social-links img {
     flex-direction: column;
     gap: 10px;
     margin-top: 10px;
-    /* border: solid 1px black; */
 }
 
 .left-bar>* {
     box-sizing: border-box;
-    /* Ensures padding/border are included in width/height */
     border: 2px solid black;
-    /* Adds a visible border */
     padding: 10px;
-    /* Optional: adds space inside the border */
 }
 
 /* ================== Membership Application Specific Styles ================== */
 .membership {
-    /* Override main styling for the membership form page */
-
     background-color: #fff;
     padding: 10px;
 }
@@ -590,7 +587,6 @@ footer .social-links img {
 .membership .form-container {
     border: 1px solid black;
     padding: 10px;
-    width: 400px
 }
 
 .membership form label {
@@ -635,12 +631,10 @@ button {
 }
 
 .benefits {
-    padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     text-align: center;
-    width: auto;
-    width: 400px;
+
     padding-top: 25px;
     display: flex;
     flex-direction: column;
@@ -708,8 +702,6 @@ section {
     flex-direction: column;
     width: fit-content;
 }
-
-.list section {}
 
 .list section>* {
     margin: 0 1rem;
