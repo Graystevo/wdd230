@@ -672,12 +672,15 @@ section {
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    justify-items: center;
 }
 
 .grid section {
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: 100%;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .grid section a {
@@ -687,10 +690,6 @@ section {
 .grid img {
     width: 100px;
     box-shadow: 0 0 5px #333;
-}
-
-.grid section>* {
-    margin: 0.1rem;
 }
 
 .grid h3 {

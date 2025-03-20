@@ -21,7 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const img = document.createElement("img");
         img.src = `./images/${member.image}`;
-        img.alt = `${member.name} Logo`;
+        img.alt = `${member.name} Logo image`;
+        img.setAttribute("width", "100px");
+        img.setAttribute("height", "100px");
         img.setAttribute("loading", "lazy");
 
         const details = document.createElement("div");
