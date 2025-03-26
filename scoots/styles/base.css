@@ -181,7 +181,6 @@ main {
 }
 
 .content,
-.current-events,
 .spotlight-card,
 .information-card {
     width: 100%;
@@ -224,49 +223,6 @@ main {
 .current-events {
     background-color: var(--paragraph-background-color);
     padding: 0px;
-}
-
-/* Current Events section */
-.current-events h3 {
-    text-align: center;
-    background-color: #475a68;
-    color: var(--paragraph-color-on-color);
-    font-weight: bold;
-    font-size: 24px;
-    padding: 10px;
-}
-
-.current-events ol {
-    list-style-type: decimal-leading-zero;
-    list-style-position: inside;
-    color: var(--paragraph-color-on-color);
-
-}
-
-.current-events li {
-    margin: 10px;
-}
-
-.current-events a {
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    color: var(--nav-link-color);
-}
-
-.current-events a:hover {
-    color: var(--nav-hover-link-color);
-}
-
-.current-events h4 {
-    margin: 10px;
-    color: var(--paragraph-color-on-color);
-
-}
-
-.current-events p {
-    color: var(--paragraph-color-on-color);
-    margin: 10px;
 }
 
 /* spotlight card section */
