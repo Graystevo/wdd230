@@ -1,21 +1,22 @@
 // 543b25f5306a6bd35ae1625b04e51bca
-// ST GEORGE:  [37.1042, -113.5841]
+// Cozomel:  [20.5083, -86.9458]
 
 // select HTML elements in the document
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("#weather-type");
-const humdity = document.querySelector("#humidity");
+const humidity = document.querySelector("#humidity");
 const windSpeed = document.querySelector("#wind-speed");
+const maxTemp = document.querySelector("#max-temp");
 
-const url ="https://api.openweathermap.org/data/2.5/weather?lat=37.10&lon=-113.58&appid=543b25f5306a6bd35ae1625b04e51bca&units=imperial";
+const url ="https://api.openweathermap.org/data/2.5/weather?lat=20.5083&lon=-86.945&appid=543b25f5306a6bd35ae1625b04e51bca&units=imperial";
 
 async function apiFetch() {
   try {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
+      // console.log(data); // testing only
       displayResults(data); // uncomment when ready
     } else {
       throw Error(await response.text());
@@ -33,9 +34,9 @@ function displayResults(data) {
   
   weatherIcon.setAttribute("src", iconsrc);
   captionDesc.textContent = `${capitalizedDesc}`;
-  // Add humidity and wind speed
   humidity.textContent = `Humidity: ${data.main.humidity}%`;
   windSpeed.textContent = `Wind Speed: ${Math.round(data.wind.speed)} mph`;
+  maxTemp.textContent = `${data.main.temp_max}`;
 }
 
 function capitalizeWords(str) {
@@ -45,14 +46,14 @@ function capitalizeWords(str) {
     .join(" ");
 }
 
-const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=37.10&lon=-113.58&units=imperial&appid=543b25f5306a6bd35ae1625b04e51bca";
+const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&units=imperial&appid=543b25f5306a6bd35ae1625b04e51bca";
 
 async function fetchForecast() {
   try {
     const response = await fetch(forecastUrl);
     if (response.ok) {
       const forecastData = await response.json();
-      console.log(forecastData); // testing only
+      // console.log(forecastData); // testing only
       displayForecast(forecastData);
     } else {
       throw Error(await response.text());
@@ -63,12 +64,10 @@ async function fetchForecast() {
 }
 
 function displayForecast(data) {
-  // Filter the forecast entries to get those for 12:00:00 each day (midday)
-  const middayForecasts = data.list.filter((entry) => entry.dt_txt.includes("15:00:00")).slice(0, 3);
+  const middayForecasts = data.list.filter((entry) => entry.dt_txt.includes("15:00:00")).slice(0, 1);
 
-  // Select the forecast container element from the DOM
   const forecastContainer = document.querySelector("#forecast");
-  let forecastHTML = `<h4>3-Day Forecast</h4>`;
+  let forecastHTML = `<h4>Tomorrow's Forecast</h4>`;
 
   middayForecasts.forEach((day) => {
     forecastHTML += `
@@ -85,17 +84,10 @@ function displayForecast(data) {
 }
 
 function showMeetBanner() {
-  const banner = document.getElementById("meet-banner");
-  const today = new Date().getDay();
-  // Show banner on Monday (1), Tuesday (2), or Wednesday (3)
-  if (today >= 1 && today <= 3) {
-    banner.style.display = "flex";
-  } else {
-    banner.style.display = "none";
-  }
+  const banner = document.getElementById("temp-banner");
+  banner.style.display = "flex";
 }
 
-// Enable the user to close the banner
 document.getElementById("close-banner").addEventListener("click", function () {
   document.getElementById("meet-banner").style.display = "none";
 });

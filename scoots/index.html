@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Assignment">
+    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Scoots Final Assignment">
     <meta name="author" content="Graystevo">
-    <meta property="og:title" content="Grayden - WDD 230 - Chamber Home Page">
+    <meta property="og:title" content="Grayden - WDD 230 - Scoots Home Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://stgeorgechamber.com/wp-content/uploads/2020/09/smiling-worker.jpg">
-    <meta property="og:url" content="https://graystevo.github.io/wdd230">
+    <meta property="og:url" content="https://graystevo.github.io/wdd230/scoots/">
     <script src="./scripts/menu.js" defer></script>
     <script src="./scripts/windchill.js" defer></script>
     <script src="./scripts/spotlight.js"></script>
@@ -51,8 +51,13 @@
 
     <main>
         <section class="content">
-            <div id="meet-banner" class="banner" style="display:flex;">
-                <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+            <div id="temp-banner" class="banner" style="display:flex;">
+
+                
+                <!-- DO THIS WEATHER BANNER IN JS -->
+                <p>Today's max temp is: <span id="max-temp">50</span>&deg;F</p> 
+
+
                 <button id="close-banner" aria-label="Close banner">&times;</button>
             </div>
             <div class="hero">
@@ -102,7 +107,7 @@
                 <p><span id="wind-speed">Wind Speed: 5 MPH</span></p>
                 <p><span id="wind-chill">N/A</span></p>
             </div>
-            <div id="forecast">djdjdj</div>
+            <div id="forecast">Tomorrow's Forecast</div>
         </section>
     </main>
 
