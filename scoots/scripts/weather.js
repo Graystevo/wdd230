@@ -89,7 +89,7 @@ function showMeetBanner() {
 }
 
 document.getElementById("close-banner").addEventListener("click", function () {
-  document.getElementById("meet-banner").style.display = "none";
+  document.getElementById("temp-banner").style.display = "none";
 });
 
 apiFetch();
