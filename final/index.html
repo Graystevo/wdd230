@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grayden - WDD 230 - Chamber of Commerce - Home</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="preload" href="styles/base.css" as="style">
+    <link rel="preload" href="styles/larger.css" as="style">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Assignment">
+    <meta name="author" content="Graystevo">
+    <meta property="og:title" content="Grayden - WDD 230 - Chamber Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://stgeorgechamber.com/wp-content/uploads/2020/09/smiling-worker.jpg">
+    <meta property="og:url" content="https://graystevo.github.io/wdd230">
+    <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/windchill.js" defer></script>
+    <script src="./scripts/spotlight.js"></script>
+    <script src="./scripts/getdates.js"></script>
+    <script src="./scripts/weather.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-grid">
+            <div class="logo">
+                <img src="./images/st-george-logo.webp" alt="chamber Logo">
+                <h1>St. George Chamber of Commerce</h1>
+            </div>
+            <nav class="header-nav">
+                <div id="mode">
+                    <p>Mode: 🌑</p>
+                </div>
+                <button id="menu" class="" aria-label="menu button"> </button>
+                <ul class="navigation">
+                    <li><a href="./index.html" title="Home" class="active">Home</a></li>
+                    <li><a href="./discover.html" title="Discover">Discover</a></li>
+                    <li><a href="./directory.html" title="Directory">Directory</a></li>
+                    <li><a href="./join.html" title="Join">Join Us!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   
+
+    <main>
+        <section class="content">
+            <div id="meet-banner" class="banner" style="display:flex;">
+                <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</p>
+                <button id="close-banner" aria-label="Close banner">&times;</button>
+            </div>
+            <div class="hero">
+                <picture>
+                    <source srcset="./images/wdd230-small.webp" media="(max-width:500px)">
+                    <source srcset="./images/wdd230-medium.webp" media="(max-width:1000px)">
+                    <img src="./images/wdd230-large.webp" alt="Hero Image of people smiling in an office">
+                </picture>
+                <div class="herolabel">
+                    <h2>Join the Chamber!</h2>
+                </div>
+            </div>
+        </section>
+        <section class="current-events">
+            <h3>
+                Events
+            </h3>
+            <h4>
+                Ribbon Cutting - The Diamond Shack
+            </h4>
+            <p>description of event, maybe location, date, time, number</p>
+        </section>
+        <section class="spotlight-card">
+            <div id="spotlight-card1">
+                <h4>
+                    Company 1
+                </h4>
+                <p>company 1 desc</p>
+            </div>
+            <div id="spotlight-card2">
+                <h4>
+                    Company 2
+                </h4>
+                <p>company 2 desc</p>
+            </div>
+        </section>
+        <section class="information-card">
+            <h3>
+                Weather
+            </h3>
+            <div id="current-weather">
+                <h4>Current Weather</h4>
+                <img id="weather-icon" src="https://openweathermap.org/img/w/01d.png" alt="Weather icon">
+                <p><span id="current-temp">50</span>&deg;F</p>
+                <p><span id="weather-type">Partly Cloud</span></p>
+                <p><span id="humidity">Humidity: 0%</span></p>
+                <p><span id="wind-speed">Wind Speed: 5 MPH</span></p>
+                <p><span id="wind-chill">N/A</span></p>
+            </div>
+            <div id="forecast">djdjdj</div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <p>Phone #: 123-123-1234</p>
+            <p>Email: placeholder@chamber.com</p>
+            <a href="#"><img src="images/instagram.png" alt="Instagram" height="25" width="25"></a>
+            <a href="#"><img src="images/facebook.png" alt="facebook" height="25" width="25"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter" height="25" width="25"></a>
+        </div>
+        <p>&copy; Grayden - WDD 230 Project</p>
+        <p>lastModified placeholder for script: 1/15/25 </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+{
+    "companies": [
+      {
+        "name": "Tech Innovations Inc.",
+        "address": "1234 Silicon Ave, Tech City, TC 90001",
+        "phone": "(555) 123-4567",
+        "website": "https://www.techinnovations.com",
+        "image": "tech-inno.png",
+        "membership_level": "Gold",
+        "industry": "Technology",
+        "founded": 2005
+      },
+      {
+        "name": "Green Earth Solutions",
+        "address": "5678 Eco Lane, Green Town, GT 75002",
+        "phone": "(555) 987-6543",
+        "website": "https://www.greenearth.com",
+        "image": "green-earth.png",
+        "membership_level": "Silver",
+        "industry": "Environmental Services",
+        "founded": 2010
+      },
+      {
+        "name": "Urban Eats",
+        "address": "9101 Food St, Culinary City, CC 60003",
+        "phone": "(555) 321-7890",
+        "website": "https://www.urbaneats.com",
+        "image": "urban-eats.png",
+        "membership_level": "Gold",
+        "industry": "Restaurant",
+        "founded": 2015
+      },
+      {
+        "name": "NextGen Finance",
+        "address": "1122 Banking Blvd, Money Metropolis, MM 80004",
+        "phone": "(555) 456-7891",
+        "website": "https://www.nextgenfinance.com",
+        "image": "ng-finance.png",
+        "membership_level": "Gold",
+        "industry": "Financial Services",
+        "founded": 2000
+      },
+      {
+        "name": "Global Logistics LLC",
+        "address": "3344 Shipping St, Trade City, TC 70005",
+        "phone": "(555) 222-3333",
+        "website": "https://www.globallogistics.com",
+        "image": "global-logi.png",
+        "membership_level": "Bronze",
+        "industry": "Logistics",
+        "founded": 1995
+      },
+      {
+        "name": "Health First Medical",
+        "address": "5566 Wellness Way, Medville, MV 50006",
+        "phone": "(555) 777-8888",
+        "website": "https://www.healthfirst.com",
+        "image": "health-first.png",
+        "membership_level": "NP",
+        "industry": "Healthcare",
+        "founded": 1988
+      },
+      {
+        "name": "Creative Designs Studio",
+        "address": "7788 Art Ave, Design District, DD 40007",
+        "phone": "(555) 999-0000",
+        "website": "https://www.creativedesigns.com",
+        "image": "creative-designs.png",
+        "membership_level": "Silver",
+        "industry": "Graphic Design",
+        "founded": 2018
+      }
+    ]
+  }
+  
