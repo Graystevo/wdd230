@@ -4,50 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grayden - WDD 230 - Join Us!</title>
+    <title>~ Scoots ~ Thanks!</title>
     <link rel="icon" href="./images/favicon.ico">
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="preload" href="styles/base.css" as="style">
+    <link rel="preload" href="styles/larger.css" as="style">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <meta name="description" content="WDD 230 - Web Frontend Development by Grayden. Chamber of Commerce Join Page">
-    <meta name="author" content="Graystevo">
-    <meta property="og:title" content="Grayden - WDD 230 - Chamber Join Page">
+    <meta name="description" content="Scoots is a motor scooter, ATV and jeep rental service in Cozumel. Explore the island with ease and fun!">
+    <meta name="author" content="Scoots">
+    <meta property="og:title" content="~ Scoots ~ Thanks!">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://stgeorgechamber.com/wp-content/uploads/2020/09/smiling-worker.jpg">
-    <meta property="og:url" content="https://graystevo.github.io/wdd230">
+    <meta property="og:image" content="./images/cozumel-island-small.jpg">
+    <meta property="og:url" content="https://scoots.com/index.html">
     <script src="./scripts/menu.js" defer></script>
+    <script src="./scripts/getdates.js"></script>
 </head>
 
 <body>
-
     <header>
         <div class="header-grid">
             <div class="logo">
-                <img src="./images/favicon.webp" alt="chamber Logo">
-                <h1>St. George Chamber of Commerce</h1>
+                <img src="./images/logo-scoots-large.webp" alt="Scoots Logo">
+                <h1>~ Scoots ~</h1>
             </div>
-
             <nav class="header-nav">
                 <div id="mode">
-                    <p>Mode: 🌑</p>
+                    <p>🌑</p>
                 </div>
-                <button id="menu" class="" aria-label="menu button"> </button>
+                <button id="menu" aria-label="menu button"></button>
                 <ul class="navigation">
                     <li><a href="./index.html" title="Home">Home</a></li>
-                    <li><a href="./discover.html" title="Discover">Discover</a></li>
-                    <li><a href="./directory.html" title="Directory">Directory</a></li>
-                    <li><a href="./join.html" title="Join" class="active">Join Us!</a></li>
-                </ul>
+                    <li><a href="./rentals.html" title="Rentals">Rentals</a></li>
+                    <li><a href="./reservations.html" title="Reservations">Reservations</a></li>
+                    <li><a href="./contact.html" title="Contact">Contact Us!</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Submission Confirmation</title>
-    </head>
 
     <body>
         <p>Thank you for joining us! Your form submission has been recorded.</p>
@@ -55,17 +51,15 @@
 
     <footer>
         <div class="social-links">
-            <p>Phone #: 123-123-1234</p>
-            <p>Email: placeholder@chamber.com</p>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/facebook.png" alt="facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <p>Phone: 123-123-1234</p>
+            <p>Email: support@scoots.com</p>
+            <a href="#"><img src="images/instagram.png" alt="Instagram" height="25" width="25"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook" height="25" width="25"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter" height="25" width="25"></a>
         </div>
-        <p>&copy; Grayden - WDD 230 Project</p>
-        <p>lastModified placeholder for script: 1/15/25 </p>
+        <a href="./attributions.html">References and Sources</a>
+        <p>&copy; Scoots - Your Cozumel Rental Experts</p>
+        <p>Last Modified: <span id="lastModified">placeholder for script: 1/15/25</span></p>
     </footer>
-    <script> document.getElementById('formLoadTimestamp').value = Date.now(); </script>
-    <script src="./scripts/getdates.js"></script>
 </body>
-
 </html>
