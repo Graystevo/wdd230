@@ -67,7 +67,7 @@ function displayForecast(data) {
   const middayForecasts = data.list.filter((entry) => entry.dt_txt.includes("15:00:00")).slice(0, 1);
 
   const forecastContainer = document.querySelector("#forecast");
-  let forecastHTML = `<h4>Tomorrow's Forecast</h4>`;
+  let forecastHTML = `<h3>Tomorrow's Forecast</h3>`;
 
   middayForecasts.forEach((day) => {
     forecastHTML += `
