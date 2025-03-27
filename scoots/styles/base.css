@@ -241,6 +241,7 @@ main {
     padding: 10px;
     margin: 0;
     color: var(--paragraph-color-on-color);
+    border-bottom: 1px solid black;
 }
 
 /* .spotlight-card ol {
@@ -326,8 +327,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     place-items: center;
-    padding-bottom: 10px;
-    gap: 5px;
 }
 
 #forecast h3{
