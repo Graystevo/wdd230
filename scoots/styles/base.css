@@ -254,7 +254,7 @@ main {
 } */
 
 .spotlight-card img {
-    max-width: 30%;
+    max-width: 45%;
 }
 
 
@@ -285,11 +285,18 @@ main {
     font-weight: bold;
     font-size: 24px;
     padding: 10px;
+    border-bottom: 1px solid black;
 }
 
 .information-card p {
     margin: 10px;
-    color: var(--paragraph-color-on-color)
+    color: var(--paragraph-color-on-color);
+}
+.information-card li {
+    margin: 10px;
+    color: var(--paragraph-color-on-color);
+    text-align: left;
+    line-height: 120%;
 }
 
 #current-weather {
@@ -297,8 +304,6 @@ main {
     grid-template-columns: 1fr 1fr;
     text-align: center;
     place-items: center;
-    border-bottom: 1px solid black;
-
 }
 
 #current-weather h4{
@@ -334,8 +339,6 @@ main {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #475a68;
-    border-bottom: 1px solid black;
-
     width: 100%;
 }
 
