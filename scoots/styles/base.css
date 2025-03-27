@@ -233,15 +233,14 @@ main {
     text-align: center;
 }
 
-/* .spotlight-card h3 {
+.spotlight-card h4 {
     grid-column: 1/4;
     text-align: center;
     background-color: #475a68;
-    color: var(--paragraph-color-on-color);
-    font-weight: bold;
     font-size: 24px;
     padding: 10px;
-} */
+    
+}
 
 .spotlight-card h4 {
     margin: 10px;
