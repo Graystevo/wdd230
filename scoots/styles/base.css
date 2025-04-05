@@ -707,10 +707,14 @@ section a {
 }
 
 table {
-    border-collapse: collapse;
     margin: 10px;
-    max-width: 100%
+    max-width: 100%;
+    border: 1px solid black;
 }
+td {
+    border: 1px solid black;
+}
+
 .contact-info > *{
     padding: 10px;
 }
