@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <meta name="description" content="Scoots is a motor scooter, ATV and jeep rental service in Cozumel. Explore the island with ease and fun!">
+    <meta name="description"
+        content="Scoots is a motor scooter, ATV and jeep rental service in Cozumel. Explore the island with ease and fun!">
     <meta name="author" content="Scoots">
     <meta property="og:title" content="~ Scoots ~ Rentals">
     <meta property="og:type" content="website">
@@ -46,25 +47,74 @@
         </div>
     </header>
 
-    <main>
+    <main class="rental-page">
         <h2>Available Rental Options & Prices</h2>
         <!-- Data table will be inserted here by the script -->
-
-        <div id="rental-agreement">
-            <h3>Rental Details</h3>
-            <ul>
-                <li>A $50 security deposit is required to confirm reservations.</li>
-                <li>A valid driver’s license is required in hand at the time of rental.</li>
-                <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
-                <li>Fuel charge is not included.</li>
-                <li>Unlimited mileage.</li>
-                <li>Liability insurance is included.</li>
-                <li>Damage insurance is available for purchase.</li>
-                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
-                <li>Rentals may be returned to either physical location.</li>
-            </ul>
-        </div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th style="padding: 8px;">Rental Type</th>
+                    <th style="padding: 8px;">Max Persons</th>
+                    <th style="padding: 8px;">Half Day (Reservation)</th>
+                    <th style="padding: 8px;">Full Day (Reservation)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 8px;">Honda Metropolitan Scooter</td>
+                    <td style="padding: 8px;">1</td>
+                    <td style="padding: 8px;">$20</td>
+                    <td style="padding: 8px;">$30</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Honda Dio Scooter</td>
+                    <td style="padding: 8px;">2</td>
+                    <td style="padding: 8px;">$30</td>
+                    <td style="padding: 8px;">$40</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Honda PCX150 Scooter</td>
+                    <td style="padding: 8px;">2</td>
+                    <td style="padding: 8px;">$40</td>
+                    <td style="padding: 8px;">$50</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Honda Pioneer ATV</td>
+                    <td style="padding: 8px;">4</td>
+                    <td style="padding: 8px;">$50</td>
+                    <td style="padding: 8px;">$70</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Jeep Wrangler - 4 door with A/C</td>
+                    <td style="padding: 8px;">5</td>
+                    <td style="padding: 8px;">$70</td>
+                    <td style="padding: 8px;">$100</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Jeep Wrangler - 2 door</td>
+                    <td style="padding: 8px;">4</td>
+                    <td style="padding: 8px;">$60</td>
+                    <td style="padding: 8px;">$85</td>
+                </tr>
+            </tbody>
+        </table>
+        <section class="information-card">
+            <div id="rental-agreement">
+                <h3>Rental Details</h3>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver’s license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -77,7 +127,7 @@
         </div>
         <a href="./attributions.html">References and Sources</a>
         <p>&copy; Scoots - Your Cozumel Rental Experts</p>
-        <p>Last Modified: <span id="lastModified">placeholder for script: 1/15/25</span></p>
+        <p> <span id="lastModified">Last Modified: for script: 1/15/25</span></p>
     </footer>
 </body>
 
