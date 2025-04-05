@@ -258,16 +258,13 @@ main {
     max-width: 45%;
 }
 
-
-.spotlight-card a {
-    text-decoration: none;
+.spotlight-card h3 {
+    background-color: #475a68;
+    color: var(--paragraph-color-on-color);
     font-weight: bold;
-    transition: color 0.3s ease;
-    color: var(--nav-link-color);
-}
-
-.spotlight-card a:hover {
-    color: var(--nav-hover-link-color);
+    font-size: 24px;
+    padding: 10px;
+    border-bottom: 1px solid black;
 }
 
 .spotlight-card p {
