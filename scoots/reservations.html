@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/larger.css">
-    <meta name="description" content="Scoots is a motor scooter, ATV and jeep rental service in Cozumel. Explore the island with ease and fun!">
+    <meta name="description"
+        content="Scoots is a motor scooter, ATV and jeep rental service in Cozumel. Explore the island with ease and fun!">
     <meta name="author" content="Scoots">
     <meta property="og:title" content="~ Scoots ~ Reservations">
     <meta property="og:type" content="website">
@@ -37,7 +38,7 @@
                 </div>
                 <button id="menu" aria-label="menu button"></button>
                 <ul class="navigation">
-                    <li><a href="./index.html" title="Home" >Home</a></li>
+                    <li><a href="./index.html" title="Home">Home</a></li>
                     <li><a href="./rentals.html" title="Rentals">Rentals</a></li>
                     <li><a href="./reservations.html" title="Reservations" class="active">Reservations</a></li>
                     <li><a href="./contact.html" title="Contact">Contact Us!</a></li>
@@ -51,43 +52,55 @@
         <div class="form-container">
             <form method="get" action="thankyou.html">
                 <label>
-                    First Name:
-                    <input type="text" id="firstName" name="firstName" required>
-                </label>
-                <label>
-                    Last Name:
-                    <input type="text" id="lastName" name="lastName" required>
-                </label>
-                <label>
-                    Title/Position:
-                    <input type="text" id="position" name="position" required pattern="[A-Za-z\s\-]{7,}"
-                        title="Enter at least 7 characters using letters, hyphens, and spaces only.">
+                    Name:
+                    <input type="text" id="name" name="name" required>
                 </label>
                 <label>
                     Email:
                     <input type="email" id="email" name="email" required placeholder="example@domain.com">
                 </label>
                 <label>
-                    Mobile Phone:
+                    Phone Number:
                     <input type="tel" id="phone" name="phone" required>
                 </label>
                 <label>
-                    Business/Organization Name:
-                    <input type="text" id="businessName" name="businessName" required>
+                    Rental Date:
+                    <input type="date" id="rentalDate" name="rentalDate" required>
                 </label>
                 <label>
-                    Rental Level:
-                    <select id="rental" name="remtals" required>
-                        <option value="">Select a Rental</option>
-                        <option value="NP">NP Rental (Non Profit - No Fee)</option>
-                        <option value="Bronze">Bronze Rental</option>
-                        <option value="Silver">Silver Rental</option>
-                        <option value="Gold">Gold Rental</option>
+                    Rental Period:
+                    <select id="rentalPeriod" name="rentalPeriod" required>
+                        <option value="">Select Rental Period</option>
+                        <option value="half_day">Half Day</option>
+                        <option value="full_day">Full Day</option>
+                        <option value="multi_day">Multi-Day</option>
                     </select>
                 </label>
                 <label>
-                    Business/Organization Description:
-                    <textarea id="businessDesc" name="businessDesc" rows="4" cols="50"></textarea>
+                    Rental Type:
+                    <select id="rentalType" name="rentalType" required>
+                        <option value="">Select Rental Type</option>
+                        <option value="scooter">Scooter</option>
+                        <option value="atv">ATV</option>
+                        <option value="jeep">Jeep</option>
+                    </select>
+                </label>
+                <label>
+                    Quantity:
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </label>
+                <label>
+                    Home State/Country:
+                    <input type="text" id="location" name="location" required>
+                </label>
+                <label>
+                    Cruise Line (if applicable):
+                    <input type="text" id="cruiseLine" name="cruiseLine">
+                </label>
+                <label class="full-width">
+                    Special Accommodations/Comments:
+                    <textarea id="comments" name="comments" rows="4"
+                        placeholder="E.g., drop-off request location"></textarea>
                 </label>
                 <!-- Hidden field set by JavaScript on page load -->
                 <input type="hidden" id="formLoadTimestamp" name="formLoadTimestamp" value="">
@@ -95,30 +108,35 @@
             </form>
 
         </div>
-        <!-- Sidebar showing rental benefits -->
-        <div class="benefits">
-            <h2>Rental Benefits</h2>
-            <h3>NP Rental:</h3>
-            <p>Free for non-profit organizations.</p>
-            <h3>Bronze Rental:</h3>
-            <p>Basic access to events and training sessions.</p>
-            <h3>Silver Rental:</h3>
-            <p>Bronze benefits plus advertising opportunities and event discounts.</p>
-            <h3>Gold Rental:</h3>
-            <p>Silver benefits with exclusive training, spotlight features, and premium event access.</p>
-        </div>
+        <section class="information-card">
+
+            <div id="rental-agreement">
+                <h3>Rental Details</h3>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid driver’s license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years is allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </div>
     </main>
 
     <footer>
         <div class="social-links">
             <p>Phone: 123-123-1234</p>
             <p>Email: support@scoots.com</p>
-            <a href="#"><img src="images/instagram.png" alt="Instagram" height="25" width="25"></a>
-            <a href="#"><img src="images/facebook.png" alt="Facebook" height="25" width="25"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter" height="25" width="25"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
         </div>
-        <a href="./attributions.html">References and Sources</a>
         <p>&copy; Scoots - Your Cozumel Rental Experts</p>
+        <a href="./attributions.html">References and Sources</a>
         <p>Last Modified: <span id="lastModified">placeholder for script: 1/15/25</span></p>
     </footer>
 </body>
